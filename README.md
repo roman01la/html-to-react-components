@@ -1,5 +1,7 @@
 # Extract annotated HTML components from HTML documents into React components
 
+![](sample.gif)
+
 ## Installation
 
 ```
