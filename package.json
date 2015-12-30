@@ -1,6 +1,6 @@
 {
   "name": "html-to-react-components",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Extract annotated HTML components from HTML documents into React components",
   "main": "lib/index.js",
   "keywords": [
