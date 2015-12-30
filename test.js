@@ -1,5 +1,5 @@
 var fs = require('fs');
-var getComponentsLib = require('./');
+var getComponentsLib = require('./lib');
 
 var html = fs.readFileSync('./test/basic.html',  'utf8');
 
