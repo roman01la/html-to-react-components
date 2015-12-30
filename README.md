@@ -37,7 +37,7 @@ extractReactComponents(
 
 </body>
 </html>
-`);
+`, { componentType: 'stateless' });
 
 /*
 { Header: 'const Header = () => <header className="header">\n\n    <Heading></Heading>\n\n    <Nav></Nav>\n\n  </header>;',
@@ -46,6 +46,33 @@ extractReactComponents(
   ListItem: 'const ListItem = () => <li className="list-item">#2</li>;' }
 */
 ```
+
+## Options
+
+### componentType
+
+- stateless
+- es5 (default)
+- es6
+
+### moduleType
+
+- false (do not extract as modules)
+- es6 (default)
+- cjs (CommonJS)
+
+### moduleFileNameDelimiter
+
+Delimiter character to be used in the name for imported children modules.
+
+Default is `-`;
+
+### output
+
+Save components as files.
+
+- path (output directory path)
+- fileExtension (default is `js`)
 
 ## License
 
