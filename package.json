@@ -1,0 +1,26 @@
+{
+  "name": "html-to-react-components",
+  "version": "1.0.0",
+  "description": "Extract annotated HTML components from HTML documents into React components",
+  "main": "index.js",
+  "keywords": [
+    "posthtml",
+    "html",
+    "react",
+    "component",
+    "babel"
+  ],
+  "author": "Roman Liutikov <roman01la@romanliutikov.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-generator": "^6.3.26",
+    "babel-types": "^6.3.24",
+    "babylon": "^6.3.26",
+    "posthtml": "^0.8.0",
+    "posthtml-parser": "^0.1.1",
+    "posthtml-render": "^1.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3"
+  }
+}
