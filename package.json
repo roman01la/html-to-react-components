@@ -1,6 +1,6 @@
 {
   "name": "html-to-react-components",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Extract annotated HTML components from HTML documents into React components",
   "main": "index.js",
   "keywords": [
@@ -14,8 +14,10 @@
   "license": "MIT",
   "dependencies": {
     "babel-generator": "^6.3.26",
+    "babel-traverse": "^6.3.26",
     "babel-types": "^6.3.24",
     "babylon": "^6.3.26",
+    "htmltojsx": "^0.2.5",
     "posthtml": "^0.8.0",
     "posthtml-parser": "^0.1.1",
     "posthtml-render": "^1.0.5"

@@ -5,12 +5,13 @@ var parse = require('posthtml-parser');
 var render = require('posthtml-render');
 var generate = require('babel-generator').default;
 var parseJSX = require('babylon').parse;
+var traverse = require('babel-traverse').default;
 var t = require('babel-types');
+var HTMLtoJSX = require('htmltojsx');
 
-var jsxAttrs = {
-  'class': 'className',
-  'for': 'htmlFor'
-};
+var html2jsx = new HTMLtoJSX({
+  createClass: false
+});
 
 function getComponentName(node) {
 
@@ -38,64 +39,18 @@ function collectComponents(components) {
 
     if (isComponent(node)) {
 
-      components.push(toJsxAttrs(node));
+      components.push(node);
     }
 
     return node;
-  };
-}
-
-function toJsxAttrs(node) {
-
-  if (!node.attrs) {
-    return node;
-  }
-
-  node.attrs = Object.keys(node.attrs)
-    .reduce(function(attrs, attr) {
-
-      attrs[jsxAttrs[attr] || attr] = node.attrs[attr];
-
-      return attrs;
-    }, {});
-
-  return node;
-}
-
-function childrenToComponent(component) {
-
-  var children = [];
-
-  api.walk.bind(component)(function(node) {
-
-    if (isComponent(node)) {
-
-      var name = getComponentName(node);
-
-      children.push(name);
-
-      return {
-        tag: name
-      };
-    }
-
-    return toJsxAttrs(node);
-  });
-
-  return {
-    component: component,
-    children: children.filter(function(child, i) {
-      return children.indexOf(child) === i;
-    })
   };
 }
 
 function assignByName(component) {
 
   return [
-    getComponentName(component.component),
-    component.component,
-    component.children
+    getComponentName(component),
+    component
   ];
 }
 
@@ -118,12 +73,49 @@ function mergeByName(components) {
   return components
     .reduce(function(cs, component) {
 
-      cs[component[0]] = {
-        body: component[1],
-        children: component[2]
-      };
+      cs[component[0]] = component[1];
       return cs;
     }, {});
+}
+
+function childrenToComponents(ast) {
+
+  var children = [];
+
+  traverse(ast, {
+    JSXElement: function(p) {
+
+      if (p.node.openingElement.attributes.length > 0) {
+
+        var name;
+
+        var attrs = p.node.openingElement.attributes.filter(function(attr) {
+          return attr.name.name === 'data-component';
+        });
+
+        if (attrs.length > 0) {
+          name = attrs[0].value.value;
+        }
+
+        if (name) {
+          p.node.openingElement.name.name = name;
+          p.node.closingElement.name.name = name;
+
+          p.node.openingElement.attributes = [];
+          p.node.children = [];
+
+          children.push(name);
+        }
+      }
+    }
+  });
+
+  return {
+    ast: ast,
+    children: children.filter(function(child, i) {
+      return children.indexOf(child) === i;
+    })
+  };
 }
 
 function toJsxAST(components) {
@@ -131,9 +123,11 @@ function toJsxAST(components) {
   return Object.keys(components)
     .reduce(function(cs, name) {
 
+      var out = childrenToComponents(parseJSX(html2jsx.convert(components[name]), { plugins: ['jsx'] }));
+
       cs[name] = {
-        body: parseJSX(components[name].body, { plugins: ['jsx'] }),
-        children: components[name].children
+        body: out.ast,
+        children: out.children
       };
 
       return cs;
@@ -340,7 +334,6 @@ function htmlToReactComponentsLib(tree, options) {
       toJsxAST(
         mergeByName(
           components
-            .map(childrenToComponent)
             .map(assignByName)
             .map(clearAndRenderComponents))));
 
