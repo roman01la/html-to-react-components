@@ -12,6 +12,14 @@ $ npm i html-to-react-components
 
 HTML components should be annotated with `data-component` attribute, the value of the attribute will be the name of the React component.
 
+### CLI
+
+```
+$ html2react -c es5 -m es6 -d "-" -e "jsx" -o ./components
+```
+
+### API
+
 ```js
 import extractReactComponents from 'html-to-react-components';
 
@@ -51,19 +59,19 @@ extractReactComponents(
 
 ## Options
 
-### componentType
+### componentType, -c
 
 - stateless
 - es5 (default)
 - es6
 
-### moduleType
+### moduleType, -m
 
 - false (do not extract as modules)
 - es6 (default)
 - cjs (CommonJS)
 
-### moduleFileNameDelimiter
+### moduleFileNameDelimiter, -d
 
 Delimiter character to be used in the name for imported children modules.
 
