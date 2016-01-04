@@ -79,8 +79,8 @@ Type of generated JavaScript modules.
 
 Values:
 
-- `false` (do not extract components as modules)
-- `es6` (default)
+- `false` (default, do not extract components as modules)
+- `es6`
 - `cjs` (CommonJS)
 
 ### moduleFileNameDelimiter
