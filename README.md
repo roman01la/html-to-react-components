@@ -1,6 +1,21 @@
-# Extract annotated HTML components from HTML documents into React components
+<img src="logo.png" width="260" />
 
-![](sample.gif)
+<a href="https://travis-ci.org/roman01la/html-to-react-components">
+  <img src="https://img.shields.io/travis/roman01la/html-to-react-components.svg?style=flat-square" />
+</a>
+<a href="https://www.npmjs.com/package/html-to-react-components">
+  <img src="https://img.shields.io/npm/v/html-to-react-components.svg?style=flat-square" />
+</a>
+
+Extract annotated portions of HTML into React components as separate modules. The structure of HTML is preserved by importing child components and replacing appropriate pieces of HTML with them. As a result you get an entire components tree ready to be rendered.
+
+![usage example animation](sample.gif)
+
+## When to use it
+
+This utility was designed to free React developers from a boring work of translating HTML into components.
+
+Imagine you just got a pile of HTML from your designers. The first thing you will do is break HTML into React components. This is boring and we can automate this.
 
 ## Installation
 
@@ -10,7 +25,9 @@ $ npm i html-to-react-components
 
 ## Usage
 
-HTML components should be annotated with `data-component` attribute, the value of the attribute will be the name of the React component.
+HTML components should be annotated with `data-component` attribute. The value of the attribute is the name of the React component.
+
+See and run `test.js` file for usage example and output.
 
 ### CLI
 
@@ -61,28 +78,45 @@ extractReactComponents(
 
 ### componentType, -c
 
-- stateless
-- es5 (default)
-- es6
+Type of generated React components.
+
+Values:
+
+- `stateless`
+- `es5` (default)
+- `es6`
 
 ### moduleType, -m
 
-- false (do not extract as modules)
-- es6 (default)
-- cjs (CommonJS)
+Type of generated JavaScript modules.
+
+Values:
+
+- `false` (do not extract components as modules)
+- `es6` (default)
+- `cjs` (CommonJS)
 
 ### moduleFileNameDelimiter, -d
 
-Delimiter character to be used in the name for imported children modules.
+Delimiter character to be used in modules filename.
 
-Default is `-`;
+Default value is `-`.
 
 ### output
 
-Save components as files.
+Configuration options for output to file system.
 
-- path (output directory path)
-- fileExtension (default is `js`)
+#### path
+
+Output directory path.
+
+Default is `components` directory in the current directory.
+
+#### fileExtension
+
+Output files extension.
+
+Default value is `js`.
 
 ## License
 

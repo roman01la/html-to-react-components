@@ -3,6 +3,9 @@
   "version": "1.1.3",
   "description": "Extract annotated HTML components from HTML documents into React components",
   "main": "lib/index.js",
+  "scripts": {
+    "test": "_mocha test"
+  },
   "keywords": [
     "posthtml",
     "html",
@@ -19,11 +22,13 @@
     "babylon": "^6.3.26",
     "htmltojsx": "^0.2.5",
     "meow": "^3.6.0",
+    "mkdirp": "^0.5.1",
     "posthtml": "^0.8.0",
     "posthtml-parser": "^0.1.1",
     "posthtml-render": "^1.0.5"
   },
   "devDependencies": {
-    "eslint": "^1.10.3"
+    "eslint": "^1.10.3",
+    "mocha": "^2.3.4"
   }
 }
