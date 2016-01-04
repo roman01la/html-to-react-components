@@ -21,6 +21,7 @@
     "babel-types": "^6.3.24",
     "babylon": "^6.3.26",
     "htmltojsx": "^0.2.5",
+    "mkdirp": "^0.5.1",
     "posthtml": "^0.8.0",
     "posthtml-parser": "^0.1.1",
     "posthtml-render": "^1.0.5"

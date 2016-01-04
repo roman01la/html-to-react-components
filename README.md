@@ -23,7 +23,7 @@ $ npm i html-to-react-components
 
 HTML components should be annotated with `data-component` attribute. The value of the attribute is the name of the React component.
 
-See `test.js` file for usage example with more options.
+See and run `test.js` file for usage example and output.
 
 ```js
 import extractReactComponents from 'html-to-react-components';
@@ -80,8 +80,8 @@ Type of generated JavaScript modules.
 
 Values:
 
-- `false` (default, do not extract components as modules)
-- `es6`
+- `false` (do not extract components as modules)
+- `es6` (default)
 - `cjs` (CommonJS)
 
 ### moduleFileNameDelimiter
@@ -97,6 +97,8 @@ Configuration options for output to file system.
 #### path
 
 Output directory path.
+
+Default is `components` directory in the current directory.
 
 #### fileExtension
 
