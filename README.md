@@ -1,6 +1,7 @@
 <img src="logo.png" width="260" />
 
-![NPM version badge](https://img.shields.io/npm/v/html-to-react-components.svg?style=flat-square)
+![Travis CI build status](https://img.shields.io/travis/roman01la/html-to-react-components.svg?style=flat-square)
+![NPM version](https://img.shields.io/npm/v/html-to-react-components.svg?style=flat-square)
 
 Extract annotated portions of HTML into React components as separate modules. The structure of HTML is preserved by importing child components and replacing appropriate pieces of HTML with them. As a result you get an entire components tree ready to be rendered.
 
