@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML to React components</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font: normal 20px monospace;
+      background: #fafafa;
+    }
+
+    a {
+      color: #00D8FF;
+    }
+
+    pre {
+      text-align: left;
+      font-size: 14px;
+      background: #eee;
+      padding: 10px;
+      margin: 0;
+      border-radius: 4px;
+    }
+
+    code {
+      background: #eee;
+      border-radius: 2px;
+      padding: 0 4px;
+      font-size: 0.8em;
+    }
+
+    .header {
+      text-align: center;
+    }
+
+    .main {
+      max-width: 950px;
+      margin: 40px auto 0;
+    }
+
+    .oneline {
+      margin: 20px auto;
+      word-wrap: break-word;
+    }
+
+    .code {
+      display: flex;
+      justify-content: center;
+      margin: 0 0 60px;
+    }
+
+    .code pre {
+      flex: 1;
+      overflow: scroll;
+    }
+
+    .arrow {
+      display: flex;
+      flex: 1;
+      max-width: 20px;
+      margin: 0 10px;
+      align-items: center;
+      font-family: sans-serif;
+    }
+
+    .footer {
+      text-align: center;
+      margin: 50px 0 0;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+
+    <img src="img/logo.png" alt="HTML to React components logo" width="260" height="90">
+    <p class="description"><small>Extract annotated portions of HTML into React components as separate modules</small></p>
+
+  </header>
+
+  <main class="main">
+
+    <pre class="oneline">$ npm i -g html-to-react-components</pre>
+    <pre class="oneline">$ html2react index.html -c es5 -m es6 -e jsx</pre>
+
+    <div class="code">
+
+      <pre>&lt;!-- index.html --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;header class="header" data-component="Header"&gt;
+    &lt;h1 class="heading" data-component="Heading"&gt;Hello, world!&lt;/h1&gt;
+  &lt;/header&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+      <div class="arrow">→</div>
+
+      <pre>// header.jsx
+import React from "react";
+import Heading from "./heading";
+
+const Header = React.createClass({
+  render() {
+    return (
+      &lt;header className="header"&gt;
+        &lt;Heading&gt;&lt;/Heading&gt;
+      &lt;/header&gt;
+    );
+  }
+});
+
+export default Header;
+
+// heading.jsx
+import React from "react";
+
+const Header = React.createClass({
+  render() {
+    return &lt;h1 className="heading"&gt;Hello, world!&lt;/h1&gt;;
+  }
+});
+
+export default Heading;</pre>
+
+    </div>
+
+    <p>This utility was designed to free React developers from a boring work of translating HTML into React components.</p>
+    <p>Imagine you just got a pile of HTML from your designers. The first thing you will do is break HTML into React components. This is boring and we can automate this.</p>
+    <p>HTML components should be annotated with <code>data-component</code> attribute. The value of the attribute is the name of the React component. The structure of HTML is preserved by importing child components and replacing appropriate pieces of HTML with them. As a result you get an entire components tree ready to be rendered.</p>
+    <p><a href="https://github.com/roman01la/html-to-react-components#options">Read API and CLI build options reference</a></p>
+
+  </main>
+
+  <footer class="footer">
+    <p><small>MIT License</small></p>
+  </footer>
+
+  <a href="https://github.com/roman01la/html-to-react-components" title="Fork me on GitHub" class="github-corner"><svg width="50" height="50" viewBox="0 0 250 250"><title>Fork me on GitHub</title><path d="M0 0h250v250"></path><path d="M127.4 110c-14.6-9.2-9.4-19.5-9.4-19.5 3-7 1.5-11 1.5-11-1-6.2 3-2 3-2 4 4.7 2 11 2 11-2.2 10.4 5 14.8 9 16.2" fill="currentColor" style="transform-origin:130px 110px" class="octo-arm"></path><path d="M113.2 114.3s3.6 1.6 4.7.6l15-13.7c3-2.4 6-3 8.2-2.7-8-11.2-14-25 3-41 4.7-4.4 10.6-6.4 16.2-6.4.6-1.6 3.6-7.3 11.8-10.7 0 0 4.5 2.7 6.8 16.5 4.3 2.7 8.3 6 12 9.8 3.3 3.5 6.7 8 8.6 12.3 14 3 16.8 8 16.8 8-3.4 8-9.4 11-11.4 11 0 5.8-2.3 11-7.5 15.5-16.4 16-30 9-40 .2 0 3-1 7-5.2 11l-13.3 11c-1 1 .5 5.3.8 5z" fill="currentColor" class="octo-body"></path></svg><style> .github-corner svg{position:absolute;left:0;top:0;transform:scale(-1,1);mix-blend-mode:darken;color:#ffffff;fill:#060307;}.github-corner:hover .octo-arm{animation:octocat-wave .56s;}@keyframes octocat-wave{0%, 100%{transform:rotate(0);}20%, 60%{transform:rotate(-20deg);}40%, 80%{transform:rotate(10deg);}}</style></a>
+
+</body>
+</html>
