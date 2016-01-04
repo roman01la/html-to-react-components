@@ -23,33 +23,32 @@ describe('HTML to React components', function() {
 
   it('should generate ES5 React components', function() {
 
-    assert.ok(equal(expected[0], getComponentsLib(html)));
-  });
-
-  it('should generate ES5 React components', function() {
-
     assert.ok(equal(expected[0], getComponentsLib(html, {
-      componentType: 'es5'
+      componentType: 'es5',
+      moduleType: false
     })));
   });
 
   it('should generate ES6 React components', function() {
 
     assert.ok(equal(expected[1], getComponentsLib(html, {
-      componentType: 'es6'
+      componentType: 'es6',
+      moduleType: false
     })));
   });
 
   it('should generate stateless React components', function() {
 
     assert.ok(equal(expected[2], getComponentsLib(html, {
-      componentType: 'stateless'
+      componentType: 'stateless',
+      moduleType: false
     })));
   });
 
   it('should generate ES5 React components as ES6 modules', function() {
 
     assert.ok(equal(expected[3], getComponentsLib(html, {
+      componentType: 'es5',
       moduleType: 'es6'
     })));
   });
@@ -57,6 +56,7 @@ describe('HTML to React components', function() {
   it('should generate ES5 React components as CommonJS modules', function() {
 
     assert.ok(equal(expected[4], getComponentsLib(html, {
+      componentType: 'es5',
       moduleType: 'cjs'
     })));
   });
