@@ -20,7 +20,7 @@ Imagine you just got a pile of HTML from your designers. The first thing you wil
 ## Installation
 
 ```
-$ npm i html-to-react-components
+$ npm i -g html-to-react-components
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ See and run `test.js` file for usage example and output.
 ### CLI
 
 ```
-$ html2react -c es5 -m es6 -d "-" -e "jsx" -o ./components
+$ html2react ./src/*.html -c stateless -m es6 -d _ -o components -e jsx
 ```
 
 ### API
@@ -64,7 +64,11 @@ extractReactComponents(
 
 </body>
 </html>
-`, { componentType: 'stateless' });
+`,
+{
+  componentType: 'stateless',
+  moduleType: false
+});
 
 /*
 { Header: 'const Header = () => <header className="header">\n\n    <Heading></Heading>\n\n    <Nav></Nav>\n\n  </header>;',
@@ -106,13 +110,13 @@ Default value is `-`.
 
 Configuration options for output to file system.
 
-#### path
+#### path, -o
 
 Output directory path.
 
 Default is `components` directory in the current directory.
 
-#### fileExtension
+#### fileExtension, -e
 
 Output files extension.
 
