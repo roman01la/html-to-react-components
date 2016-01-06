@@ -66,6 +66,12 @@
       font-family: sans-serif;
     }
 
+    .arrow::before {
+      content: '→';
+      display: block;
+      position: relative;
+    }
+
     .footer {
       text-align: center;
       margin: 50px 0 0;
@@ -73,6 +79,23 @@
 
     .footer p {
       margin: 0;
+    }
+
+    @media screen and (max-width: 700px) {
+
+      .code {
+        flex-direction: column;
+      }
+
+      .arrow {
+        max-width: initial;
+        margin: 5px 0;
+        justify-content: center;
+      }
+
+      .arrow::before {
+        content: '↓';
+      }
     }
   </style>
 </head>
@@ -89,7 +112,7 @@
   <main class="main">
 
     <pre class="oneline">$ npm i -g html-to-react-components</pre>
-    <pre class="oneline">$ html2react index.html -c es5 -m es6 -e jsx</pre>
+    <pre class="oneline">$ html2react index.html -c es5 -m es6 -e js -o ./components</pre>
 
     <div class="code">
 
@@ -109,11 +132,11 @@
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-      <div class="arrow">→</div>
+      <div class="arrow"></div>
 
-      <pre>// header.jsx
-import React from "react";
-import Heading from "./heading";
+      <pre>// header.js
+import React from 'react';
+import Heading from './heading';
 
 const Header = React.createClass({
   render() {
@@ -127,8 +150,8 @@ const Header = React.createClass({
 
 export default Header;
 
-// heading.jsx
-import React from "react";
+// heading.js
+import React from 'react';
 
 const Header = React.createClass({
   render() {
