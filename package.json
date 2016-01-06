@@ -26,7 +26,6 @@
     "chalk": "^1.1.1",
     "cst": "0.0.16",
     "esformatter": "^0.8.1",
-    "esformatter-jsx": "^4.1.0",
     "esformatter-quotes": "^1.0.3",
     "glob": "^6.0.3",
     "htmltojsx": "^0.2.5",
