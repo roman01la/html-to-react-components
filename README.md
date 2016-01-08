@@ -122,6 +122,9 @@ Output files extension.
 
 Default value is `js`.
 
+## Contribution
+If you spotted a bug, please, submit a pull request with a bug fix. If you would like to add a feature or change existing behaviour, open an issue and tell about what exactly you want to change/add.
+
 ## License
 
 MIT
