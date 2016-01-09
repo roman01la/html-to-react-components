@@ -27,7 +27,7 @@ $ npm i -g html-to-react-components
 
 HTML components should be annotated with `data-component` attribute. The value of the attribute is the name of the React component.
 
-See and run `test.js` file for usage example and output.
+See and run `test.js` file for usage example and output or watch a [video](https://www.youtube.com/watch?v=Cd8cNLfGcVo) of the process.
 
 ### CLI
 
