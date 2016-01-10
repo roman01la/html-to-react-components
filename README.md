@@ -104,7 +104,10 @@ Values:
 
 Delimiter character to be used in modules filename.
 
-Default value is `-`.
+If you don't specify a delimiter, or pass -d without a value, then the component
+name in the HTML will be used unchanged as the filename. If you do specify a
+delimiter character, then the module name is broken into words, joined with the
+delimiter and lower-cased.
 
 ### output
 
