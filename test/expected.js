@@ -53,5 +53,16 @@ module.exports = [
     Field: "const React = require('react');\nconst Label = require('./Label');\nconst Input = require('./Input');\n\nconst Field = React.createClass({\n  render() {\n    return (\n      <div className=\"field\">\n        <Label></Label>\n        <Input />\n      </div>\n      );\n  }\n});\n\nmodule.exports = Field;",
     Label: "const React = require('react');\n\nconst Label = React.createClass({\n  render() {\n    return (\n      <label htmlFor=\"input\">\n        Input<span>label</span>\n      </label>\n      );\n  }\n});\n\nmodule.exports = Label;",
     Input: "const React = require('react');\n\nconst Input = React.createClass({\n  render() {\n    return <input type=\"text\" id=\"input\" />;\n  }\n});\n\nmodule.exports = Input;"
+  },
+  {
+    Header: "import React from 'react';\nimport Heading from './heading';\nimport Nav from './nav';\n\nconst Header = React.createClass({\n  render() {\n    return (\n      <header className=\"header\">\n        <Heading></Heading>\n        <Nav></Nav>\n      </header>\n      );\n  }\n});\n\nexport default Header;",
+    Heading: "import React from 'react';\n\nconst Heading = React.createClass({\n  render() {\n    return <h1 className=\"heading\">Hello, world!</h1>;\n  }\n});\n\nexport default Heading;",
+    Nav: "import React from 'react';\nimport ListItem from './list-item';\n\nconst Nav = React.createClass({\n  render() {\n    return (\n      <nav className=\"nav\">\n        <ul className=\"list\">\n          <ListItem />\n          <ListItem />\n        </ul>\n      </nav>\n      );\n  }\n});\n\nexport default Nav;",
+    ListItem: "import React from 'react';\n\nconst ListItem = React.createClass({\n  render() {\n    return <li className=\"list-item\" />;\n  }\n});\n\nexport default ListItem;",
+    Main: "import React from 'react';\nimport Form from './form';\n\nconst Main = React.createClass({\n  render() {\n    return (\n      <main className=\"main\">\n        <Form></Form>\n      </main>\n      );\n  }\n});\n\nexport default Main;",
+    Form: "import React from 'react';\nimport Field from './field';\n\nconst Form = React.createClass({\n  render() {\n    return (\n      <form action>\n        <Field></Field>\n      </form>\n      );\n  }\n});\n\nexport default Form;",
+    Field: "import React from 'react';\nimport Label from './label';\nimport Input from './input';\n\nconst Field = React.createClass({\n  render() {\n    return (\n      <div className=\"field\">\n        <Label></Label>\n        <Input />\n      </div>\n      );\n  }\n});\n\nexport default Field;",
+    Label: "import React from 'react';\n\nconst Label = React.createClass({\n  render() {\n    return (\n      <label htmlFor=\"input\">\n        Input<span>label</span>\n      </label>\n      );\n  }\n});\n\nexport default Label;",
+    Input: "import React from 'react';\n\nconst Input = React.createClass({\n  render() {\n    return <input type=\"text\" id=\"input\" />;\n  }\n});\n\nexport default Input;"
   }
 ];

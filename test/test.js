@@ -83,4 +83,14 @@ describe('HTML to React components', function() {
       moduleType: 'cjs'
     }));
   });
+
+  it('should generate file names in lowercase with the specified delimiter', function() {
+
+    equal(expected[5], getComponentsLib(html, {
+      componentType: 'es5',
+      moduleType: 'es6',
+      moduleFileNameDelimiter: '-'
+    }));
+  });
 });
+
