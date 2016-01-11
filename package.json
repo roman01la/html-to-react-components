@@ -7,7 +7,7 @@
     "html2react": "lib/cli.js"
   },
   "scripts": {
-    "test": "_mocha test",
+    "test": "npm run lint && istanbul cover _mocha test --report lcovonly && coveralls < coverage/lcov.info && rm -rf ./coverage",
     "lint": "eslint ./lib/*.js ./test/*.js"
   },
   "bugs": {
@@ -47,7 +47,9 @@
     "rocambole-token": "^1.2.1"
   },
   "devDependencies": {
+    "coveralls": "^2.11.6",
     "eslint": "^1.10.3",
+    "istanbul": "^0.4.2",
     "mocha": "^2.3.4"
   }
 }
