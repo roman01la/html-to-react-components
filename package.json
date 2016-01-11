@@ -9,6 +9,10 @@
   "scripts": {
     "test": "_mocha test"
   },
+  "bugs": {
+    "url": "https://github.com/roman01la/html-to-react-components/issues"
+  },
+  "homepage": "https://github.com/roman01la/html-to-react-components",
   "keywords": [
     "posthtml",
     "html",
@@ -16,6 +20,10 @@
     "component",
     "babel"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/roman01la/html-to-react-components.git"
+  },
   "author": "Roman Liutikov <roman01la@romanliutikov.com>",
   "license": "MIT",
   "dependencies": {
