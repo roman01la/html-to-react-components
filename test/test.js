@@ -2,8 +2,12 @@ var fs = require('fs');
 var path = require('path');
 var assert = require('assert');
 var getComponentsLib = require('../lib');
-var html = fs.readFileSync(path.join(__dirname, 'basic.html'), 'utf8');
+var html = readFile('basic.html');
 var expected = require('./expected');
+
+function readFile(file) {
+  return fs.readFileSync(path.join(__dirname, file), 'utf8');
+}
 
 function assertKeysEqual(o1, o2) {
   var o1k = Object.keys(o1);
@@ -90,5 +94,13 @@ describe('HTML to React components', function() {
       moduleFileNameDelimiter: '-'
     }));
   });
-});
 
+  it('should throw an error if there\'s data-component attribute without a value in HTML', function() {
+
+    try {
+      getComponentsLib(readFile('fail.html'));
+    } catch (error) {
+      assert.equal(error.message, 'There\'s annotated component without a name!');
+    }
+  });
+});
