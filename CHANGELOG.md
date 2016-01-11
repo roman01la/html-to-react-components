@@ -1,7 +1,13 @@
 ## HEAD
 
+## [v1.3.0]
+> Jan 11, 2016
+
+- If no `moduleFileNameDelimiter`, `-d` is specified, the filename of the component is set to the value of `data-component` attribute in HTML.
 - Added project website.
 - Added changelog.
+
+[v1.3.0]: https://github.com/roman01la/html-to-react-components/compare/v1.2.1...v1.3.0
 
 ## [v1.2.1]
 > Jan 6, 2016
