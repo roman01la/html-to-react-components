@@ -1,5 +1,13 @@
 ## HEAD
 
+## [v1.3.1]
+> Jan 11, 2016
+
+- Reset `esformatter` settings after every run.
+- Make tests green again.
+
+[v1.3.1]: https://github.com/roman01la/html-to-react-components/compare/v1.3.0...v1.3.1
+
 ## [v1.3.0]
 > Jan 11, 2016
 
