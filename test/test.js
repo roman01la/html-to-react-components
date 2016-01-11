@@ -15,12 +15,11 @@ function assertKeysEqual(o1, o2) {
     o1k.forEach(function(key) {
       assert.ok(o2.hasOwnProperty(key));
     });
-  }
-  catch (err) {
-		err.expected = o1k;
-		err.actual = o2k;
-		err.showDiff = true;
-		throw err;
+  } catch (err) {
+    err.expected = o1k;
+    err.actual = o2k;
+    err.showDiff = true;
+    throw err;
   }
 
 }
@@ -33,12 +32,11 @@ function equal(o1, o2) {
     Object.keys(o1).forEach(function(key) {
       assert.equal(o1[key], o2[key]);
     });
-  }
-  catch (err) {
-		err.expected = o1;
-		err.actual = o2;
-		err.showDiff = true;
-		throw err;
+  } catch (err) {
+    err.expected = o1;
+    err.actual = o2;
+    err.showDiff = true;
+    throw err;
   }
 }
 
