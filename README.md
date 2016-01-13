@@ -130,9 +130,7 @@ Default value is `js`.
 
 ## Resources
 
-A quick demo on converting a simple HTML page into React components and rendering them into the same looking UI.
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/Cd8cNLfGcVo" frameborder="0" allowfullscreen></iframe>
+A quick [video demo](https://www.youtube.com/embed/Cd8cNLfGcVo) on converting a simple HTML page into React components and rendering them into the same looking UI.
 
 Annotating HTML in the editor is not the best experience, because you cannot see rendered UI itself. It's possible to annotate HTML using DevTools. Be aware that you'll have to spend time on copying and pasting markup from DevTools into files which will be processed.
 
