@@ -1,4 +1,4 @@
-<img src="logo.png" width="260" />
+<img src="logo.png" width="260" alt="Logo" />
 
 <a href="https://travis-ci.org/roman01la/html-to-react-components">
   <img src="https://img.shields.io/travis/roman01la/html-to-react-components.svg?style=flat-square" />
@@ -30,7 +30,7 @@ $ npm i -g html-to-react-components
 
 HTML components should be annotated with `data-component` attribute. The value of the attribute is the name of the React component.
 
-See and run `test.js` file for usage example and output or watch a [video](https://www.youtube.com/watch?v=Cd8cNLfGcVo) of the process. There's also alternative workflow using DevTools, see quick [demo](https://gfycat.com/ShockingDefiantBobcat).
+See and run `test.js` file for usage example and output.
 
 ### CLI
 
@@ -127,6 +127,16 @@ Default is `components` directory in the current directory.
 Output files extension.
 
 Default value is `js`.
+
+## Resources
+
+A quick demo on converting a simple HTML page into React components and rendering them into the same looking UI.
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/Cd8cNLfGcVo" frameborder="0" allowfullscreen></iframe>
+
+Annotating HTML in the editor is not the best experience, because you cannot see rendered UI itself. It's possible to annotate HTML using DevTools. Be aware that you'll have to spend time on copying and pasting markup from DevTools into files which will be processed.
+
+![usage example with DevTools animation](https://giant.gfycat.com/ShockingDefiantBobcat.gif)
 
 ## Contribution
 If you spotted a bug, please, submit a pull request with a bug fix. If you would like to add a feature or change existing behaviour, open an issue and tell about what exactly you want to change/add.
