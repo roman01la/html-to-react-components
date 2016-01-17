@@ -1,5 +1,12 @@
 ## HEAD
 
+## [v1.3.2]
+> Jan 17, 2016
+
+- Fix Babylon version
+
+[v1.3.2]: https://github.com/roman01la/html-to-react-components/compare/v1.3.1...v1.3.2
+
 ## [v1.3.1]
 > Jan 11, 2016
 
