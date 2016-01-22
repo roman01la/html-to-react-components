@@ -64,5 +64,8 @@ module.exports = [
     Field: 'import React from \'react\';\nimport Label from \'./label\';\nimport Input from \'./input\';\n\nconst Field = React.createClass({\n  render() {\n    return (\n      <div className=\"field\">\n        <Label></Label>\n        <Input />\n      </div>\n      );\n  }\n});\n\nexport default Field;',
     Label: 'import React from \'react\';\n\nconst Label = React.createClass({\n  render() {\n    return (\n      <label htmlFor=\"input\">\n        Input<span>label</span>\n      </label>\n      );\n  }\n});\n\nexport default Label;',
     Input: 'import React from \'react\';\n\nconst Input = React.createClass({\n  render() {\n    return <input type=\"text\" id=\"input\" />;\n  }\n});\n\nexport default Input;'
+  },
+  {
+    Box: 'import React from \'react\';\n\nconst Box = React.createClass({\n  render() {\n    return <div style={{\n        margin: 0,\n        padding: 10,\n        border: \'1px solid black\'\n      }}>Box</div>;\n  }\n});\n\nexport default Box;'
   }
 ];

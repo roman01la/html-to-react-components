@@ -103,4 +103,9 @@ describe('HTML to React components', function() {
       assert.equal(error.message, 'There\'s annotated component without a name!');
     }
   });
+
+  it('should transform inline CSS properly', function() {
+
+    equal(expected[6], getComponentsLib('<div data-component="Box" style="margin:0;padding:10px;border:1px solid black;">Box</div>'));
+  });
 });
