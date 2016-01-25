@@ -81,6 +81,34 @@ extractReactComponents(
 */
 ```
 
+### Browserify
+
+Use in a browser environment requires some additional setup:
+
+#### NO_WRITE_FS
+
+Disable writing to disk by setting the `NO_WRITE_FS` environment variable:
+
+```
+NO_WRITE_FS=true browserify ...
+```
+
+Alternatively, if you're using [`envify`](https://github.com/hughsk/envify);
+
+```
+browserify in.js -g [ envify --NO_WRITE_FS ] ...
+```
+
+Note the use of a _global_ flag (`-g`) for `envify` to ensure this module gets
+transformed when it is a dependency.
+
+#### `Error: Cannot find module './parser' from '.../node_modules/babylon'`
+
+This is [a bug](https://phabricator.babeljs.io/T6930) caused by the `babylon`
+package (which this project depends upon). While this bug is still alive, you
+should follow [these instructions](https://phabricator.babeljs.io/T6930#72420)
+to work around it.
+
 ## Options
 
 ### componentType, -c
