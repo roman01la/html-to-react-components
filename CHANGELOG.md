@@ -1,4 +1,10 @@
-## HEAD
+## [v1.4.0]
+> Jan 26, 2016
+
+- Fix inline styles conversion, [issue #9](https://github.com/roman01la/html-to-react-components/issues/9)
+- Add `--NO_WRITE_FS` env variable to disable Node's `fs` module when building for browser
+
+[v1.4.0]: https://github.com/roman01la/html-to-react-components/compare/v1.3.2...v1.4.0
 
 ## [v1.3.2]
 > Jan 17, 2016
