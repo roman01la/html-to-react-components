@@ -3,3 +3,4 @@ npm-debug.log
 test/*.actual.html
 components
 coverage
+.coveralls.yml
