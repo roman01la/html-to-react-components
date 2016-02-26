@@ -16,6 +16,8 @@ Extract annotated portions of HTML into React components as separate modules. Th
 
 ## When to use it
 
+[![Join the chat at https://gitter.im/roman01la/html-to-react-components](https://badges.gitter.im/roman01la/html-to-react-components.svg)](https://gitter.im/roman01la/html-to-react-components?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This utility was designed to free React developers from a boring work of translating HTML into components.
 
 Imagine you just got a pile of HTML from your designers. The first thing you will do is break HTML into React components. This is boring and we can automate this.
