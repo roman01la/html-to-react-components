@@ -1,5 +1,6 @@
 <img src="logo.png" width="260" alt="Logo" />
 
+[![Join the chat at https://gitter.im/roman01la/html-to-react-components](https://badges.gitter.im/roman01la/html-to-react-components.svg)](https://gitter.im/roman01la/html-to-react-components?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 <a href="https://travis-ci.org/roman01la/html-to-react-components">
   <img src="https://img.shields.io/travis/roman01la/html-to-react-components.svg?style=flat-square" />
 </a>
@@ -15,8 +16,6 @@ Extract annotated portions of HTML into React components as separate modules. Th
 ![usage example animation](sample.gif)
 
 ## When to use it
-
-[![Join the chat at https://gitter.im/roman01la/html-to-react-components](https://badges.gitter.im/roman01la/html-to-react-components.svg)](https://gitter.im/roman01la/html-to-react-components?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 This utility was designed to free React developers from a boring work of translating HTML into components.
 
