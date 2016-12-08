@@ -168,6 +168,9 @@ Annotating HTML in the editor is not the best experience, because you cannot see
 ### Browser extension
 [extract-to-react](https://github.com/jesstelford/extract-to-react) is an extension for Chrome and Chromium browsers built on top of *html-to-react-components* which allows you to extract HTML and CSS into React components and load them in CodePen or JSFiddle.
 
+## Alternatives
+- [reacterminator](https://github.com/poetic/reacterminator) converts html to react components in es6 syntax.
+
 ## Contribution
 If you spotted a bug, please, submit a pull request with a bug fix. If you would like to add a feature or change existing behaviour, open an issue and tell about what exactly you want to change/add.
 
