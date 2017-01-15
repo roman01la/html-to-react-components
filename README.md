@@ -71,7 +71,11 @@ extractReactComponents(
 `,
 {
   componentType: 'stateless',
-  moduleType: false
+  moduleType: false,
+  afterASTHook: function(asts) {
+    // manipulate asts
+    return asts
+  }
 });
 
 /*
