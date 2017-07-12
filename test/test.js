@@ -11,8 +11,7 @@ describe('HTML to React components', function() {
   it('should generate ES5 React components', function() {
     expect(
       getComponentsLib(html, {
-        componentType: 'es5',
-        moduleType: false
+        componentType: 'es5'
       })
     ).toMatchSnapshot();
   });
@@ -20,8 +19,7 @@ describe('HTML to React components', function() {
   it('should generate ES6 React components', function() {
     expect(
       getComponentsLib(html, {
-        componentType: 'es6',
-        moduleType: false
+        componentType: 'es6'
       })
     ).toMatchSnapshot();
   });
@@ -29,8 +27,7 @@ describe('HTML to React components', function() {
   it('should generate stateless React components', function() {
     expect(
       getComponentsLib(html, {
-        componentType: 'stateless',
-        moduleType: false
+        componentType: 'stateless'
       })
     ).toMatchSnapshot();
   });
