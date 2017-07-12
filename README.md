@@ -36,7 +36,7 @@ See and run `test.js` file for usage example and output.
 ### CLI
 
 ```
-$ html2react ./src/*.html -c stateless -m es6 -d _ -o components -e jsx
+$ html2react ./src/*.html
 ```
 
 ### API
@@ -112,27 +112,26 @@ to work around it.
 
 ## Options
 
-### componentType, -c
+### componentType, --component, -c
 
 Type of generated React components.
 
 Values:
 
 - `stateless`
-- `es5` (default)
-- `es6`
+- `es5`
+- `es6` (default)
 
-### moduleType, -m
+### moduleType, --module, -m
 
 Type of generated JavaScript modules.
 
 Values:
 
-- `false` (do not extract components as modules)
 - `es6` (default)
 - `cjs` (CommonJS)
 
-### moduleFileNameDelimiter, -d
+### moduleFileNameDelimiter, --delimiter, -d
 
 Delimiter character to be used in modules filename.
 
@@ -145,13 +144,13 @@ delimiter and lower-cased.
 
 Configuration options for output to file system.
 
-#### path, -o
+#### path, --out, -o
 
 Output directory path.
 
 Default is `components` directory in the current directory.
 
-#### fileExtension, -e
+#### fileExtension, --ext, -e
 
 Output files extension.
 
