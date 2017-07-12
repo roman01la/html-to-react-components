@@ -1,3 +1,16 @@
+## [v1.5.0]
+> Jul 12, 2017
+
+- Set component type option to ES6 by default
+- Remove `false` value for module type option
+- Update CLI help text
+
+## [v1.4.1]
+> Jul 10, 2017
+
+- Use Prettier for output formatting
+- Use Jest for testing
+
 ## [v1.4.0]
 > Jan 26, 2016
 

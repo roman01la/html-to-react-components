@@ -1,6 +1,6 @@
 {
   "name": "html-to-react-components",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Converts HTML pages into React components",
   "main": "lib/index.js",
   "bin": {
@@ -13,13 +13,7 @@
     "url": "https://github.com/roman01la/html-to-react-components/issues"
   },
   "homepage": "https://github.com/roman01la/html-to-react-components",
-  "keywords": [
-    "posthtml",
-    "html",
-    "react",
-    "component",
-    "babel"
-  ],
+  "keywords": ["posthtml", "html", "react", "component", "babel"],
   "repository": {
     "type": "git",
     "url": "git://github.com/roman01la/html-to-react-components.git"
