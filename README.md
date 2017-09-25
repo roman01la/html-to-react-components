@@ -11,6 +11,12 @@
   <img src="https://img.shields.io/coveralls/roman01la/html-to-react-components.svg?style=flat-square" />
 </a>
 
+<p>
+<a href="https://www.patreon.com/bePatron?c=1239559">
+  <img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" height="40px" />
+</a>
+</p>
+
 Extract annotated portions of HTML into React components as separate modules. The structure of HTML is preserved by importing child components and replacing appropriate pieces of HTML with them. As a result you get an entire components tree ready to be rendered.
 
 ![usage example animation](sample.gif)
