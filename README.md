@@ -22,9 +22,9 @@ Extract annotated portions of HTML into React components as separate modules. Th
 
 ## When to use it
 
-This utility was designed to free React developers from a boring work of translating HTML into components.
+This utility was designed to free React developers from a boring task of translating HTML into components.
 
-Imagine you just got a pile of HTML from your designers. The first thing you will do is break HTML into React components. This is boring and we can automate this.
+Imagine you just got a pile of HTML from your designers. The first thing you will do is break HTML into React components. This is boring and should be automated!
 
 ## Installation
 
@@ -34,17 +34,63 @@ $ npm i -g html-to-react-components
 
 ## Usage
 
-HTML components should be annotated with `data-component` attribute. The value of the attribute is the name of the React component.
+HTML element with `data-component` attribute will be converted into separate React components. The value of the attribute is the name of the React component.
 
 See and run `test.js` file for usage example and output.
 
-### CLI
+## CLI
 
 ```
 $ html2react ./src/*.html
 ```
 
-### API
+### Options
+
+#### componentType, --component, -c
+
+Type of generated React components.
+
+Values:
+
+* `stateless`
+* `es5`
+* `es6` (default)
+
+#### moduleType, --module, -m
+
+Type of generated JavaScript modules.
+
+Values:
+
+* `es6` (default)
+* `cjs` (CommonJS)
+
+#### moduleFileNameDelimiter, --delimiter, -d
+
+Delimiter character to be used in modules filename.
+
+If you don't specify a delimiter, or pass -d without a value, then the component
+name in the HTML will be used unchanged as the filename. If you do specify a
+delimiter character, then the module name is broken into words, joined with the
+delimiter and lower-cased.
+
+#### output
+
+Configuration options for output to file system.
+
+##### path, --out, -o
+
+Output directory path.
+
+Default is `components` directory in the current directory.
+
+##### fileExtension, --ext, -e
+
+Output files extension.
+
+Default value is `js`.
+
+## API
 
 ```js
 import extractReactComponents from "html-to-react-components"
@@ -88,80 +134,6 @@ extractReactComponents(
 */
 ```
 
-### Browserify
-
-Use in a browser environment requires some additional setup:
-
-#### NO_WRITE_FS
-
-Disable writing to disk by setting the `NO_WRITE_FS` environment variable:
-
-```
-NO_WRITE_FS=true browserify ...
-```
-
-Alternatively, if you're using [`envify`](https://github.com/hughsk/envify);
-
-```
-browserify in.js -g [ envify --NO_WRITE_FS ] ...
-```
-
-Note the use of a _global_ flag (`-g`) for `envify` to ensure this module gets
-transformed when it is a dependency.
-
-#### `Error: Cannot find module './parser' from '.../node_modules/babylon'`
-
-This is [a bug](https://phabricator.babeljs.io/T6930) caused by the `babylon`
-package (which this project depends upon). While this bug is still alive, you
-should follow [these instructions](https://phabricator.babeljs.io/T6930#72420)
-to work around it.
-
-## Options
-
-### componentType, --component, -c
-
-Type of generated React components.
-
-Values:
-
-* `stateless`
-* `es5`
-* `es6` (default)
-
-### moduleType, --module, -m
-
-Type of generated JavaScript modules.
-
-Values:
-
-* `es6` (default)
-* `cjs` (CommonJS)
-
-### moduleFileNameDelimiter, --delimiter, -d
-
-Delimiter character to be used in modules filename.
-
-If you don't specify a delimiter, or pass -d without a value, then the component
-name in the HTML will be used unchanged as the filename. If you do specify a
-delimiter character, then the module name is broken into words, joined with the
-delimiter and lower-cased.
-
-### output
-
-Configuration options for output to file system.
-
-#### path, --out, -o
-
-Output directory path.
-
-Default is `components` directory in the current directory.
-
-#### fileExtension, --ext, -e
-
-Output files extension.
-
-Default value is `js`.
-
 ## Resources
 
 A quick [video demo](https://www.youtube.com/embed/Cd8cNLfGcVo) on converting a simple HTML page into React components and rendering them into the same looking UI.
@@ -170,11 +142,11 @@ Annotating HTML in the editor is not the best experience, because you cannot see
 
 ![usage example with DevTools animation](https://giant.gfycat.com/ShockingDefiantBobcat.gif)
 
-### Browser extension
+## Ecosystem
 
-[extract-to-react](https://github.com/jesstelford/extract-to-react) is an extension for Chrome and Chromium browsers built on top of _html-to-react-components_ which allows you to extract HTML and CSS into React components and load them in CodePen or JSFiddle.
+- [extract-to-react](https://github.com/jesstelford/extract-to-react) is an extension for Chrome and Chromium browsers built on top of _html-to-react-components_ which allows you to extract HTML and CSS into React components and load them in CodePen or JSFiddle.
 
-## Contribution
+## Contributing
 
 If you spotted a bug, please, submit a pull request with a bug fix. If you would like to add a feature or change existing behaviour, open an issue and tell about what exactly you want to change/add.
 
