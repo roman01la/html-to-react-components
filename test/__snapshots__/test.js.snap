@@ -605,21 +605,23 @@ Object {
 import Label from \\"./Label\\";
 import Input from \\"./Input\\";
 
-const Field = () =>
+const Field = () => (
   <div className=\\"field\\">
     <Label />
     <Input />
-  </div>;
+  </div>
+);
 
 export default Field;
 ",
   "Form": "import React from \\"react\\";
 import Field from \\"./Field\\";
 
-const Form = () =>
+const Form = () => (
   <form action>
     <Field />
-  </form>;
+  </form>
+);
 
 export default Form;
 ",
@@ -627,11 +629,12 @@ export default Form;
 import Heading from \\"./Heading\\";
 import Nav from \\"./Nav\\";
 
-const Header = () =>
+const Header = () => (
   <header className=\\"header\\">
     <Heading />
     <Nav />
-  </header>;
+  </header>
+);
 
 export default Header;
 ",
@@ -649,10 +652,11 @@ export default Input;
 ",
   "Label": "import React from \\"react\\";
 
-const Label = () =>
+const Label = () => (
   <label htmlFor=\\"input\\">
     Input<span>label</span>
-  </label>;
+  </label>
+);
 
 export default Label;
 ",
@@ -665,23 +669,25 @@ export default ListItem;
   "Main": "import React from \\"react\\";
 import Form from \\"./Form\\";
 
-const Main = () =>
+const Main = () => (
   <main className=\\"main\\">
     <Form />
-  </main>;
+  </main>
+);
 
 export default Main;
 ",
   "Nav": "import React from \\"react\\";
 import ListItem from \\"./ListItem\\";
 
-const Nav = () =>
+const Nav = () => (
   <nav className=\\"nav\\">
     <ul className=\\"list\\">
       <ListItem />
       <ListItem />
     </ul>
-  </nav>;
+  </nav>
+);
 
 export default Nav;
 ",

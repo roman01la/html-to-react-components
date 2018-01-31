@@ -47,10 +47,10 @@ $ html2react ./src/*.html
 ### API
 
 ```js
-import extractReactComponents from 'html-to-react-components';
+import extractReactComponents from "html-to-react-components"
 
 extractReactComponents(
-`<!DOCTYPE html>
+  `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -74,10 +74,11 @@ extractReactComponents(
 </body>
 </html>
 `,
-{
-  componentType: 'stateless',
-  moduleType: false
-});
+  {
+    componentType: "stateless",
+    moduleType: false,
+  },
+)
 
 /*
 { Header: 'const Header = () => <header className="header">\n\n    <Heading></Heading>\n\n    <Nav></Nav>\n\n  </header>;',
@@ -123,9 +124,9 @@ Type of generated React components.
 
 Values:
 
-- `stateless`
-- `es5`
-- `es6` (default)
+* `stateless`
+* `es5`
+* `es6` (default)
 
 ### moduleType, --module, -m
 
@@ -133,8 +134,8 @@ Type of generated JavaScript modules.
 
 Values:
 
-- `es6` (default)
-- `cjs` (CommonJS)
+* `es6` (default)
+* `cjs` (CommonJS)
 
 ### moduleFileNameDelimiter, --delimiter, -d
 
@@ -170,9 +171,11 @@ Annotating HTML in the editor is not the best experience, because you cannot see
 ![usage example with DevTools animation](https://giant.gfycat.com/ShockingDefiantBobcat.gif)
 
 ### Browser extension
-[extract-to-react](https://github.com/jesstelford/extract-to-react) is an extension for Chrome and Chromium browsers built on top of *html-to-react-components* which allows you to extract HTML and CSS into React components and load them in CodePen or JSFiddle.
+
+[extract-to-react](https://github.com/jesstelford/extract-to-react) is an extension for Chrome and Chromium browsers built on top of _html-to-react-components_ which allows you to extract HTML and CSS into React components and load them in CodePen or JSFiddle.
 
 ## Contribution
+
 If you spotted a bug, please, submit a pull request with a bug fix. If you would like to add a feature or change existing behaviour, open an issue and tell about what exactly you want to change/add.
 
 ## License
