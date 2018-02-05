@@ -3,3 +3,5 @@ npm-debug.log
 test/*.actual.html
 components
 coverage
+*sublime-project
+*sublime-workspace
