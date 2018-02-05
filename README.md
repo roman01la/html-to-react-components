@@ -41,7 +41,13 @@ See and run `test.js` file for usage example and output.
 ## CLI
 
 ```
-$ html2react ./src/*.html
+$ html2react "./src/*.html"
+```
+
+You can also use any glob pattern to recursively generate the corresponding react file. Just make sure to use double quotes when specifying the pattern:
+
+```
+$ html2react "./src/**/*.html"
 ```
 
 ### Options
