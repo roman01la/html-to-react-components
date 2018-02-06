@@ -32,7 +32,7 @@
     "babel-types": "^6.3.24",
     "babylon": "^6.3.26",
     "chalk": "2.3.0",
-    "glob": "7.1.2",
+    "glob": "^7.1.2",
     "htmltojsx": "0.3.0",
     "meow": "4.0.0",
     "mkdirp": "^0.5.1",
