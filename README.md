@@ -27,7 +27,7 @@ Extract annotated portions of HTML into React components as separate modules. Th
 * [Usage](#usage)
 * [CLI](#cli)
 * [Options](#options)
-* [Node.js API](#node-js-api)
+* [Node.js API](#nodejs-api)
 * [Building for browser](#building-for-browser)
 * [Resources](#resources)
 * [Ecosystem](#ecosystem)
