@@ -20,6 +20,20 @@ Extract annotated portions of HTML into React components as separate modules. Th
 
 ![usage example animation](sample.gif)
 
+## Contents
+
+* [When to use it](#when-to-use-it)
+* [Installation](#installation)
+* [Usage](#usage)
+* [CLI](#cli)
+* [Options](#options)
+* [Node.js API](#node-js-api)
+* [Building for browser](#building-for-browser)
+* [Resources](#resources)
+* [Ecosystem](#ecosystem)
+* [Contributing](#contributing)
+* [License](#License)
+
 ## When to use it
 
 This utility was designed to free React developers from a boring task of translating HTML into components.
@@ -96,10 +110,10 @@ Output files extension.
 
 Default value is `js`.
 
-## API
+## Node.js API
 
 ```js
-import extractReactComponents from "html-to-react-components"
+const extractReactComponents = require("html-to-react-components")
 
 extractReactComponents(
   `<!DOCTYPE html>
@@ -140,6 +154,20 @@ extractReactComponents(
 */
 ```
 
+## Building for browser
+
+When building for in-browser usage an env variable `IN_BROWSER` is required to be set at compile time in order to disable Node.js-specific modules. Note that code formatting is not included in in-browser bundle.
+
+Example of defining a var in Webpack config:
+
+```js
+  plugins: [
+    new webpack.DefinePlugin({
+      IN_BROWSER: JSON.stringify(true),
+    }),
+  ],
+```
+
 ## Resources
 
 A quick [video demo](https://www.youtube.com/embed/Cd8cNLfGcVo) on converting a simple HTML page into React components and rendering them into the same looking UI.
@@ -150,7 +178,7 @@ Annotating HTML in the editor is not the best experience, because you cannot see
 
 ## Ecosystem
 
-- [extract-to-react](https://github.com/jesstelford/extract-to-react) is an extension for Chrome and Chromium browsers built on top of _html-to-react-components_ which allows you to extract HTML and CSS into React components and load them in CodePen or JSFiddle.
+* [extract-to-react](https://github.com/jesstelford/extract-to-react) is an extension for Chrome and Chromium browsers built on top of _html-to-react-components_ which allows you to extract HTML and CSS into React components and load them in CodePen or JSFiddle.
 
 ## Contributing
 

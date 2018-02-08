@@ -40,7 +40,7 @@
     "posthtml": "0.11.2",
     "posthtml-parser": "0.4.0",
     "posthtml-render": "^1.0.6",
-    "prettier": "git://github.com/prettier/prettier.git#1.7.4"
+    "prettier": "^1.10.2"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
