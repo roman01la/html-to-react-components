@@ -3,12 +3,14 @@
   "version": "1.6.0",
   "description": "Converts HTML pages into React components",
   "main": "lib/index.js",
+  "browser": "dist/html2react.js",
   "bin": {
     "html2react": "lib/cli.js"
   },
   "scripts": {
     "test": "jest test",
-    "build:example": "webpack -p"
+    "build:example": "webpack -p",
+    "build:browser": "webpack -p --config webpack.browser.js"
   },
   "bugs": {
     "url": "https://github.com/roman01la/html-to-react-components/issues"
