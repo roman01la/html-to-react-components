@@ -14,7 +14,13 @@
     "url": "https://github.com/roman01la/html-to-react-components/issues"
   },
   "homepage": "https://github.com/roman01la/html-to-react-components",
-  "keywords": ["posthtml", "html", "react", "component", "babel"],
+  "keywords": [
+    "posthtml",
+    "html",
+    "react",
+    "component",
+    "babel"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/roman01la/html-to-react-components.git"
@@ -37,6 +43,9 @@
     "prettier": "git://github.com/prettier/prettier.git#1.7.4"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
     "jest": "22.1.4",
     "webpack": "^3.10.0"
   }
