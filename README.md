@@ -18,6 +18,8 @@
 
 Extract annotated portions of HTML into React components as separate modules. The structure of HTML is preserved by importing child components and replacing appropriate pieces of HTML with them. As a result you get an entire components tree ready to be rendered.
 
+Try in [online REPL](http://roman01la.github.io/html-to-react-components/repl/)
+
 ![usage example animation](sample.gif)
 
 ## Contents
