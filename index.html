@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -77,6 +78,7 @@
       padding-top: 25px;
       height: 0;
     }
+
     .video iframe {
       position: absolute;
       top: 0;
@@ -112,16 +114,99 @@
     }
   </style>
   <style>
-    .hljs{display:block;padding:0.5em;}.hljs,.hljs-subst{color:#444}.hljs-keyword,.hljs-attribute,.hljs-selector-tag,.hljs-meta-keyword,.hljs-doctag,.hljs-name{font-weight:bold}.hljs-built_in,.hljs-literal,.hljs-bullet,.hljs-code,.hljs-addition{color:#1F811F}.hljs-regexp,.hljs-symbol,.hljs-variable,.hljs-template-variable,.hljs-link,.hljs-selector-attr,.hljs-selector-pseudo{color:#BC6060}.hljs-type,.hljs-string,.hljs-number,.hljs-selector-id,.hljs-selector-class,.hljs-quote,.hljs-template-tag,.hljs-deletion{color:#880000}.hljs-title,.hljs-section{color:#880000;font-weight:bold}.hljs-comment{color:#888888}.hljs-meta{color:#2B6EA1}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:bold}
+    .hljs {
+      display: block;
+      padding: 0.5em;
+    }
+
+    .hljs,
+    .hljs-subst {
+      color: #444
+    }
+
+    .hljs-keyword,
+    .hljs-attribute,
+    .hljs-selector-tag,
+    .hljs-meta-keyword,
+    .hljs-doctag,
+    .hljs-name {
+      font-weight: bold
+    }
+
+    .hljs-built_in,
+    .hljs-literal,
+    .hljs-bullet,
+    .hljs-code,
+    .hljs-addition {
+      color: #1F811F
+    }
+
+    .hljs-regexp,
+    .hljs-symbol,
+    .hljs-variable,
+    .hljs-template-variable,
+    .hljs-link,
+    .hljs-selector-attr,
+    .hljs-selector-pseudo {
+      color: #BC6060
+    }
+
+    .hljs-type,
+    .hljs-string,
+    .hljs-number,
+    .hljs-selector-id,
+    .hljs-selector-class,
+    .hljs-quote,
+    .hljs-template-tag,
+    .hljs-deletion {
+      color: #880000
+    }
+
+    .hljs-title,
+    .hljs-section {
+      color: #880000;
+      font-weight: bold
+    }
+
+    .hljs-comment {
+      color: #888888
+    }
+
+    .hljs-meta {
+      color: #2B6EA1
+    }
+
+    .hljs-emphasis {
+      font-style: italic
+    }
+
+    .hljs-strong {
+      font-weight: bold
+    }
   </style>
 </head>
+
 <body>
 
   <header class="header">
 
-    <svg width="298" height="103" viewBox="0 0 597 206" xmlns="http://www.w3.org/2000/svg"><title>circle4427 + HTML5 Logo</title><g fill="none" fill-rule="evenodd"><path d="M432.557 0c-3.862-.018-7.275.78-10.1 2.41-10.965 6.33-16.036 26.987-11.35 53.715.458 2.62 1.022 5.302 1.682 8.033-3.562 1.042-6.967 2.166-10.19 3.366-24.194 9.01-38.6 22.584-38.6 34.87 0 12.66 15.353 27.38 40.843 36.686 2.718.992 5.56 1.912 8.51 2.763-.818 3.376-1.507 6.674-2.06 9.876-4.456 25.762-.153 45.668 10.573 51.86 11.178 6.455 31.757-.128 53.01-18.285 1.793-1.533 3.59-3.16 5.385-4.863 1.757 1.664 3.514 3.252 5.268 4.75 21.252 18.16 41.832 24.742 53.01 18.288 10.726-6.193 15.03-26.1 10.574-51.862-.573-3.315-1.29-6.73-2.145-10.232 2.356-.7 4.646-1.437 6.854-2.218 26.353-9.327 42.343-23.857 42.343-36.765 0-12.386-15.087-26.064-39.626-35.088-2.852-1.05-5.84-2.036-8.94-2.962.67-2.757 1.237-5.46 1.7-8.107 4.686-26.728-.385-47.384-11.35-53.714-10.64-6.143-29.596-.454-49.496 15.994-2.71 2.24-5.446 4.686-8.19 7.315-2.783-2.67-5.558-5.153-8.307-7.425C457.34 6.325 443.233.05 432.557 0zm1.22 9.685c8.848-.11 21.422 6.228 34.822 18.374 1.61 1.46 3.237 3.01 4.873 4.636-6.617 7.044-13.2 15.083-19.51 23.882-11.4 1.076-22.237 2.84-32.126 5.19-.33-1.29-.636-2.566-.915-3.823-5.277-23.766-2.25-41.662 6.365-46.637 1.83-1.055 4.014-1.592 6.49-1.623zm92.848.112c2.478.03 4.663.567 6.492 1.623 8.616 4.974 11.64 22.87 6.365 46.636-.28 1.266-.59 2.55-.922 3.848-9.845-2.39-20.623-4.187-32.01-5.288-6.31-8.81-12.893-16.86-19.512-23.916 1.6-1.587 3.19-3.102 4.767-4.53 13.4-12.145 25.974-18.484 34.82-18.373zm-46.373 30.03c4.335 4.81 8.694 10.12 12.99 15.84-4.33-.204-8.72-.31-13.16-.31-4.317 0-8.596.102-12.823.294 4.296-5.714 8.656-11.02 12.992-15.823zm-.386 25.868c7.188 0 14.235.26 21.063.754 3.87 5.71 7.64 11.718 11.24 17.954 3.7 6.41 7.09 12.827 10.145 19.164-2.992 5.992-6.256 12.048-9.745 18.092-3.513 6.084-7.172 11.97-10.924 17.575-7.075.496-14.372.75-21.78.75-7.123 0-14.14-.21-20.954-.63-3.806-5.676-7.517-11.64-11.077-17.806-3.468-6.008-6.714-12.027-9.69-17.983 3.04-6.3 6.41-12.68 10.09-19.05 3.635-6.3 7.445-12.366 11.355-18.128 6.6-.456 13.386-.695 20.276-.695zm-33.406 1.912c-2.497 3.87-4.933 7.85-7.287 11.927-2.34 4.052-4.55 8.115-6.63 12.17-3.128-7.045-5.81-13.924-7.953-20.504 6.815-1.478 14.158-2.688 21.87-3.593zm67.63.115c7.66.936 14.936 2.178 21.69 3.69-2.126 6.513-4.777 13.316-7.865 20.284-2.097-4.09-4.325-8.187-6.684-12.273-2.307-3.998-4.693-7.903-7.14-11.7zm-98.736 5.736c2.926 9.522 6.882 19.513 11.656 29.668-4.626 10.165-8.39 20.16-11.218 29.674-1.523-.42-3.015-.854-4.465-1.31-23.22-7.314-37.206-18.882-37.206-28.832 0-9.654 13.124-20.32 35.163-27.4 1.952-.628 3.98-1.227 6.07-1.8zM545 73.735c1.54.435 3.046.884 4.512 1.35 22.354 7.09 36.098 17.84 36.098 27.573 0 10.144-14.567 21.563-38.57 28.892-.836.255-1.688.503-2.547.747-2.805-9.36-6.508-19.182-11.048-29.17 4.723-10.057 8.643-19.953 11.554-29.392zM479.99 81.91c-5.485 0-10.746 2.18-14.624 6.06-3.88 3.877-6.058 9.138-6.058 14.623 0 5.485 2.18 10.746 6.058 14.624 3.878 3.88 9.14 6.058 14.624 6.058 5.485 0 10.746-2.18 14.624-6.058 3.88-3.878 6.058-9.14 6.058-14.624 0-5.485-2.18-10.746-6.058-14.624-3.878-3.88-9.14-6.06-14.624-6.06zm-47.056 33.12c2.04 3.885 4.187 7.777 6.428 11.658 2.29 3.966 4.65 7.845 7.063 11.624-7.382-.784-14.423-1.848-20.983-3.205 2.043-6.44 4.55-13.174 7.492-20.078zm94.584.01c2.872 6.752 5.33 13.342 7.344 19.652-6.454 1.4-13.387 2.528-20.66 3.378 2.335-3.668 4.618-7.43 6.836-11.27 2.26-3.915 4.423-7.84 6.48-11.76zm10.008 28.826c.49 1.884.936 3.734 1.335 5.548 5.036 22.905 2.598 40.182-5.83 45.05-8.786 5.07-25.96-1.834-44.308-18.958-.61-.57-1.22-1.154-1.83-1.746 6.898-7.34 13.713-15.815 20.227-25.096 10.763-1 21.013-2.606 30.406-4.798zm-114.724.39c9.474 2.125 19.805 3.632 30.655 4.548 6.494 9.232 13.286 17.66 20.16 24.96-.648.63-1.295 1.25-1.94 1.853-18.35 17.124-35.523 24.03-44.308 18.958-8.43-4.867-10.867-22.145-5.83-45.05.378-1.724.8-3.482 1.262-5.27zm71.596 5.295c-4.66 6.32-9.408 12.15-14.147 17.35-4.734-5.184-9.476-10.998-14.132-17.3 4.598.192 9.258.29 13.962.29 4.824 0 9.605-.115 14.318-.34z" fill="#00D8FF"/><g fill="#000"><path d="M.382 68H23.46v22.8h21.11V68h23.077v69.044H44.57v-23.12H23.46v23.12H.383V68zM97.994 90.896H77.678V68h63.72v22.896h-20.325v46.148H97.995V90.896zM151.51 68h24.064l14.802 24.26L205.163 68h24.072v69.044h-22.982v-34.222l-15.877 24.55h-.397l-15.89-24.55v34.222h-22.58V68zM240.72 68h23.084v46.222h32.453v22.822H240.72V68z"/></g></g></svg>
-    <p class="description"><small>Converts HTML pages into React components</small></p>
-    <a class="github-button" href="https://github.com/roman01la/html-to-react-components" data-icon="octicon-star" data-count-href="/roman01la/html-to-react-components/stargazers" data-count-api="/repos/roman01la/html-to-react-components#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star roman01la/html-to-react-components on GitHub">Star</a>
+    <svg width="298" height="103" viewBox="0 0 597 206" xmlns="http://www.w3.org/2000/svg">
+      <title>circle4427 + HTML5 Logo</title>
+      <g fill="none" fill-rule="evenodd">
+        <path d="M432.557 0c-3.862-.018-7.275.78-10.1 2.41-10.965 6.33-16.036 26.987-11.35 53.715.458 2.62 1.022 5.302 1.682 8.033-3.562 1.042-6.967 2.166-10.19 3.366-24.194 9.01-38.6 22.584-38.6 34.87 0 12.66 15.353 27.38 40.843 36.686 2.718.992 5.56 1.912 8.51 2.763-.818 3.376-1.507 6.674-2.06 9.876-4.456 25.762-.153 45.668 10.573 51.86 11.178 6.455 31.757-.128 53.01-18.285 1.793-1.533 3.59-3.16 5.385-4.863 1.757 1.664 3.514 3.252 5.268 4.75 21.252 18.16 41.832 24.742 53.01 18.288 10.726-6.193 15.03-26.1 10.574-51.862-.573-3.315-1.29-6.73-2.145-10.232 2.356-.7 4.646-1.437 6.854-2.218 26.353-9.327 42.343-23.857 42.343-36.765 0-12.386-15.087-26.064-39.626-35.088-2.852-1.05-5.84-2.036-8.94-2.962.67-2.757 1.237-5.46 1.7-8.107 4.686-26.728-.385-47.384-11.35-53.714-10.64-6.143-29.596-.454-49.496 15.994-2.71 2.24-5.446 4.686-8.19 7.315-2.783-2.67-5.558-5.153-8.307-7.425C457.34 6.325 443.233.05 432.557 0zm1.22 9.685c8.848-.11 21.422 6.228 34.822 18.374 1.61 1.46 3.237 3.01 4.873 4.636-6.617 7.044-13.2 15.083-19.51 23.882-11.4 1.076-22.237 2.84-32.126 5.19-.33-1.29-.636-2.566-.915-3.823-5.277-23.766-2.25-41.662 6.365-46.637 1.83-1.055 4.014-1.592 6.49-1.623zm92.848.112c2.478.03 4.663.567 6.492 1.623 8.616 4.974 11.64 22.87 6.365 46.636-.28 1.266-.59 2.55-.922 3.848-9.845-2.39-20.623-4.187-32.01-5.288-6.31-8.81-12.893-16.86-19.512-23.916 1.6-1.587 3.19-3.102 4.767-4.53 13.4-12.145 25.974-18.484 34.82-18.373zm-46.373 30.03c4.335 4.81 8.694 10.12 12.99 15.84-4.33-.204-8.72-.31-13.16-.31-4.317 0-8.596.102-12.823.294 4.296-5.714 8.656-11.02 12.992-15.823zm-.386 25.868c7.188 0 14.235.26 21.063.754 3.87 5.71 7.64 11.718 11.24 17.954 3.7 6.41 7.09 12.827 10.145 19.164-2.992 5.992-6.256 12.048-9.745 18.092-3.513 6.084-7.172 11.97-10.924 17.575-7.075.496-14.372.75-21.78.75-7.123 0-14.14-.21-20.954-.63-3.806-5.676-7.517-11.64-11.077-17.806-3.468-6.008-6.714-12.027-9.69-17.983 3.04-6.3 6.41-12.68 10.09-19.05 3.635-6.3 7.445-12.366 11.355-18.128 6.6-.456 13.386-.695 20.276-.695zm-33.406 1.912c-2.497 3.87-4.933 7.85-7.287 11.927-2.34 4.052-4.55 8.115-6.63 12.17-3.128-7.045-5.81-13.924-7.953-20.504 6.815-1.478 14.158-2.688 21.87-3.593zm67.63.115c7.66.936 14.936 2.178 21.69 3.69-2.126 6.513-4.777 13.316-7.865 20.284-2.097-4.09-4.325-8.187-6.684-12.273-2.307-3.998-4.693-7.903-7.14-11.7zm-98.736 5.736c2.926 9.522 6.882 19.513 11.656 29.668-4.626 10.165-8.39 20.16-11.218 29.674-1.523-.42-3.015-.854-4.465-1.31-23.22-7.314-37.206-18.882-37.206-28.832 0-9.654 13.124-20.32 35.163-27.4 1.952-.628 3.98-1.227 6.07-1.8zM545 73.735c1.54.435 3.046.884 4.512 1.35 22.354 7.09 36.098 17.84 36.098 27.573 0 10.144-14.567 21.563-38.57 28.892-.836.255-1.688.503-2.547.747-2.805-9.36-6.508-19.182-11.048-29.17 4.723-10.057 8.643-19.953 11.554-29.392zM479.99 81.91c-5.485 0-10.746 2.18-14.624 6.06-3.88 3.877-6.058 9.138-6.058 14.623 0 5.485 2.18 10.746 6.058 14.624 3.878 3.88 9.14 6.058 14.624 6.058 5.485 0 10.746-2.18 14.624-6.058 3.88-3.878 6.058-9.14 6.058-14.624 0-5.485-2.18-10.746-6.058-14.624-3.878-3.88-9.14-6.06-14.624-6.06zm-47.056 33.12c2.04 3.885 4.187 7.777 6.428 11.658 2.29 3.966 4.65 7.845 7.063 11.624-7.382-.784-14.423-1.848-20.983-3.205 2.043-6.44 4.55-13.174 7.492-20.078zm94.584.01c2.872 6.752 5.33 13.342 7.344 19.652-6.454 1.4-13.387 2.528-20.66 3.378 2.335-3.668 4.618-7.43 6.836-11.27 2.26-3.915 4.423-7.84 6.48-11.76zm10.008 28.826c.49 1.884.936 3.734 1.335 5.548 5.036 22.905 2.598 40.182-5.83 45.05-8.786 5.07-25.96-1.834-44.308-18.958-.61-.57-1.22-1.154-1.83-1.746 6.898-7.34 13.713-15.815 20.227-25.096 10.763-1 21.013-2.606 30.406-4.798zm-114.724.39c9.474 2.125 19.805 3.632 30.655 4.548 6.494 9.232 13.286 17.66 20.16 24.96-.648.63-1.295 1.25-1.94 1.853-18.35 17.124-35.523 24.03-44.308 18.958-8.43-4.867-10.867-22.145-5.83-45.05.378-1.724.8-3.482 1.262-5.27zm71.596 5.295c-4.66 6.32-9.408 12.15-14.147 17.35-4.734-5.184-9.476-10.998-14.132-17.3 4.598.192 9.258.29 13.962.29 4.824 0 9.605-.115 14.318-.34z"
+          fill="#00D8FF" />
+        <g fill="#000">
+          <path d="M.382 68H23.46v22.8h21.11V68h23.077v69.044H44.57v-23.12H23.46v23.12H.383V68zM97.994 90.896H77.678V68h63.72v22.896h-20.325v46.148H97.995V90.896zM151.51 68h24.064l14.802 24.26L205.163 68h24.072v69.044h-22.982v-34.222l-15.877 24.55h-.397l-15.89-24.55v34.222h-22.58V68zM240.72 68h23.084v46.222h32.453v22.822H240.72V68z"
+          />
+        </g>
+      </g>
+    </svg>
+    <p class="description">
+      <small>Converts HTML pages into React components</small>
+    </p>
+    <a class="github-button" href="https://github.com/roman01la/html-to-react-components" data-icon="octicon-star" data-count-href="/roman01la/html-to-react-components/stargazers"
+      data-count-api="/repos/roman01la/html-to-react-components#stargazers_count" data-count-aria-label="# stargazers on GitHub"
+      aria-label="Star roman01la/html-to-react-components on GitHub">Star</a>
 
   </header>
 
@@ -183,19 +268,67 @@
     </div>
 
     <p>This utility was designed to free React developers from a boring work of translating HTML into React components.</p>
-    <p>Imagine you just got a pile of HTML from your designers. The first thing you will do is break HTML into React components. This is boring and we can automate this.</p>
-    <p>HTML components should be annotated with <code>data-component</code> attribute. The value of the attribute is the name of the React component. The structure of HTML is preserved by importing child components and replacing appropriate pieces of HTML with them. As a result you get an entire components tree ready to be rendered.</p>
-    <p><a href="https://github.com/roman01la/html-to-react-components#options">Read API and CLI build options reference</a></p>
+    <p>Imagine you just got a pile of HTML from your designers. The first thing you will do is break HTML into React components.
+      This is boring and we can automate this.</p>
+    <p>HTML components should be annotated with
+      <code>data-component</code> attribute. The value of the attribute is the name of the React component. The structure of HTML is preserved by importing
+      child components and replacing appropriate pieces of HTML with them. As a result you get an entire components tree
+      ready to be rendered.</p>
+    <p>
+      <a href="https://github.com/roman01la/html-to-react-components#options">Read API and CLI build options reference</a>
+    </p>
 
   </main>
 
   <footer class="footer">
-    <p><small>MIT License</small></p>
+    <p>
+      <small>MIT License</small>
+    </p>
   </footer>
 
-  <a href="https://github.com/roman01la/html-to-react-components" title="Fork me on GitHub" class="github-corner"><svg width="50" height="50" viewBox="0 0 250 250"><title>Fork me on GitHub</title><path d="M0 0h250v250"></path><path d="M127.4 110c-14.6-9.2-9.4-19.5-9.4-19.5 3-7 1.5-11 1.5-11-1-6.2 3-2 3-2 4 4.7 2 11 2 11-2.2 10.4 5 14.8 9 16.2" fill="currentColor" style="transform-origin:130px 110px" class="octo-arm"></path><path d="M113.2 114.3s3.6 1.6 4.7.6l15-13.7c3-2.4 6-3 8.2-2.7-8-11.2-14-25 3-41 4.7-4.4 10.6-6.4 16.2-6.4.6-1.6 3.6-7.3 11.8-10.7 0 0 4.5 2.7 6.8 16.5 4.3 2.7 8.3 6 12 9.8 3.3 3.5 6.7 8 8.6 12.3 14 3 16.8 8 16.8 8-3.4 8-9.4 11-11.4 11 0 5.8-2.3 11-7.5 15.5-16.4 16-30 9-40 .2 0 3-1 7-5.2 11l-13.3 11c-1 1 .5 5.3.8 5z" fill="currentColor" class="octo-body"></path></svg><style> .github-corner svg{position:absolute;left:0;top:0;transform:scale(-1,1);mix-blend-mode:darken;color:#ffffff;fill:#060307;}.github-corner:hover .octo-arm{animation:octocat-wave .56s;}@keyframes octocat-wave{0%, 100%{transform:rotate(0);}20%, 60%{transform:rotate(-20deg);}40%, 80%{transform:rotate(10deg);}}</style></a>
+  <a href="https://github.com/roman01la/html-to-react-components" title="Fork me on GitHub" class="github-corner">
+    <svg width="50" height="50" viewBox="0 0 250 250">
+      <title>Fork me on GitHub</title>
+      <path d="M0 0h250v250"></path>
+      <path d="M127.4 110c-14.6-9.2-9.4-19.5-9.4-19.5 3-7 1.5-11 1.5-11-1-6.2 3-2 3-2 4 4.7 2 11 2 11-2.2 10.4 5 14.8 9 16.2" fill="currentColor"
+        style="transform-origin:130px 110px" class="octo-arm"></path>
+      <path d="M113.2 114.3s3.6 1.6 4.7.6l15-13.7c3-2.4 6-3 8.2-2.7-8-11.2-14-25 3-41 4.7-4.4 10.6-6.4 16.2-6.4.6-1.6 3.6-7.3 11.8-10.7 0 0 4.5 2.7 6.8 16.5 4.3 2.7 8.3 6 12 9.8 3.3 3.5 6.7 8 8.6 12.3 14 3 16.8 8 16.8 8-3.4 8-9.4 11-11.4 11 0 5.8-2.3 11-7.5 15.5-16.4 16-30 9-40 .2 0 3-1 7-5.2 11l-13.3 11c-1 1 .5 5.3.8 5z"
+        fill="currentColor" class="octo-body"></path>
+    </svg>
+    <style>
+      .github-corner svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: scale(-1, 1);
+        mix-blend-mode: darken;
+        color: #ffffff;
+        fill: #060307;
+      }
+
+      .github-corner:hover .octo-arm {
+        animation: octocat-wave .56s;
+      }
+
+      @keyframes octocat-wave {
+        0%,
+        100% {
+          transform: rotate(0);
+        }
+        20%,
+        60% {
+          transform: rotate(-20deg);
+        }
+        40%,
+        80% {
+          transform: rotate(10deg);
+        }
+      }
+    </style>
+  </a>
 
   <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 
 </body>
+
 </html>
