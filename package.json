@@ -1,6 +1,6 @@
 {
   "name": "html-to-react-components",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Converts HTML pages into React components",
   "main": "lib/index.js",
   "browser": "dist/html2react.js",
