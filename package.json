@@ -1,6 +1,6 @@
 {
   "name": "html-to-react-components",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "Converts HTML pages into React components",
   "main": "lib/index.js",
   "browser": "dist/html2react.js",
@@ -30,7 +30,6 @@
     "babylon": "^6.3.26",
     "chalk": "2.3.0",
     "glob": "^7.1.2",
-    "htmltojsx": "0.3.0",
     "meow": "4.0.0",
     "mkdirp": "^0.5.1",
     "posthtml": "0.11.2",

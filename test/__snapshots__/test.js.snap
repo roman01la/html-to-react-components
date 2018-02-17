@@ -704,7 +704,7 @@ class Box extends React.Component {
       <div
         style={{
           margin: 0,
-          padding: 10,
+          padding: \\"10px\\",
           border: \\"1px solid black\\"
         }}
       >
