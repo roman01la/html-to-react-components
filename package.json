@@ -16,7 +16,13 @@
     "url": "https://github.com/roman01la/html-to-react-components/issues"
   },
   "homepage": "https://github.com/roman01la/html-to-react-components",
-  "keywords": ["posthtml", "html", "react", "component", "babel"],
+  "keywords": [
+    "posthtml",
+    "html",
+    "react",
+    "component",
+    "babel"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/roman01la/html-to-react-components.git"
@@ -28,6 +34,7 @@
     "babel-traverse": "^6.3.26",
     "babel-types": "^6.3.24",
     "babylon": "^6.3.26",
+    "babylon-walk": "^1.0.2",
     "chalk": "2.3.0",
     "glob": "^7.1.2",
     "jsdom-no-contextify": "^3.1.0",
@@ -41,9 +48,9 @@
     "react-dom": "^15.4.1"
   },
   "devDependencies": {
-    "babel-preset-es2015": "^6.24.1",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
     "jest": "22.1.4",
     "webpack": "^3.10.0"
   }

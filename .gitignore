@@ -7,3 +7,6 @@ coverage
 *sublime-workspace
 example/dist
 .DS_Store
+test.js
+test.html
+test-components
