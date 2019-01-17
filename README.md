@@ -24,17 +24,17 @@ Try in [online REPL](http://roman01la.github.io/html-to-react-components/repl/)
 
 ## Contents
 
-* [When to use it](#when-to-use-it)
-* [Installation](#installation)
-* [Usage](#usage)
-* [CLI](#cli)
-* [Options](#options)
-* [Node.js API](#nodejs-api)
-* [Building for browser](#building-for-browser)
-* [Resources](#resources)
-* [Ecosystem](#ecosystem)
-* [Contributing](#contributing)
-* [License](#License)
+- [When to use it](#when-to-use-it)
+- [Installation](#installation)
+- [Usage](#usage)
+- [CLI](#cli)
+- [Options](#options)
+- [Node.js API](#nodejs-api)
+- [Building for browser](#building-for-browser)
+- [Resources](#resources)
+- [Ecosystem](#ecosystem)
+- [Contributing](#contributing)
+- [License](#License)
 
 ## When to use it
 
@@ -51,6 +51,27 @@ $ npm i -g html-to-react-components
 ## Usage
 
 HTML element with `data-component` attribute will be converted into separate React components. The value of the attribute is the name of the React component.
+
+Additionally specify which HTML attributes should be exposed as React props using `public:` prefix.
+
+```html
+<input public:type="text" id="input" data-component="Input" />
+```
+
+```js
+// at usage place
+<Input type="text" />;
+// ----^^^^^^^^^^^
+
+// in component's module
+class Input extends React.Component {
+  render() {
+    const { type } = this.props; // <----
+    return <input type={type} id="input" />;
+    // -----------^^^^^^^^^^^
+  }
+}
+```
 
 See and run `test.js` file for usage example and output.
 
@@ -74,9 +95,9 @@ Type of generated React components.
 
 Values:
 
-* `stateless`
-* `es5`
-* `es6` (default)
+- `stateless`
+- `es5`
+- `es6` (default)
 
 #### moduleType, --module, -m
 
@@ -84,8 +105,8 @@ Type of generated JavaScript modules.
 
 Values:
 
-* `es6` (default)
-* `cjs` (CommonJS)
+- `es6` (default)
+- `cjs` (CommonJS)
 
 #### moduleFileNameDelimiter, --delimiter, -d
 
@@ -115,7 +136,7 @@ Default value is `js`.
 ## Node.js API
 
 ```js
-const extractReactComponents = require("html-to-react-components")
+const extractReactComponents = require("html-to-react-components");
 
 extractReactComponents(
   `<!DOCTYPE html>
@@ -144,9 +165,9 @@ extractReactComponents(
 `,
   {
     componentType: "stateless",
-    moduleType: false,
-  },
-)
+    moduleType: false
+  }
+);
 
 /*
 { Header: 'const Header = () => <header className="header">\n\n    <Heading></Heading>\n\n    <Nav></Nav>\n\n  </header>;',
@@ -180,7 +201,7 @@ Annotating HTML in the editor is not the best experience, because you cannot see
 
 ## Ecosystem
 
-* [extract-to-react](https://github.com/jesstelford/extract-to-react) is an extension for Chrome and Chromium browsers built on top of _html-to-react-components_ which allows you to extract HTML and CSS into React components and load them in CodePen or JSFiddle.
+- [extract-to-react](https://github.com/jesstelford/extract-to-react) is an extension for Chrome and Chromium browsers built on top of _html-to-react-components_ which allows you to extract HTML and CSS into React components and load them in CodePen or JSFiddle.
 
 ## Contributing
 
