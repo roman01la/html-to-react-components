@@ -718,3 +718,19 @@ export default Box;
 ",
 }
 `;
+
+exports[`HTML to React components should transform public HTML attrbiutes into React props 1`] = `
+Object {
+  "Button": "import React from \\"react\\";
+
+class Button extends React.Component {
+  render() {
+    const { onclick } = this.props;
+    return <button onclick={onclick}>press</button>;
+  }
+}
+
+export default Button;
+",
+}
+`;
