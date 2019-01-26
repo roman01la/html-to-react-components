@@ -1,3 +1,10 @@
+## [v1.6.5]
+
+> Jan 26, 2019
+
+- Updated dependencies
+- Fixed tests and warnings
+
 ## [v1.6.4]
 
 > Jan 17, 2019
