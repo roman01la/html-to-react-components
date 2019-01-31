@@ -1,3 +1,9 @@
+## [v1.6.6]
+
+> Jan 31, 2019
+
+- Fix for ignoring passed in output directory and file extension
+
 ## [v1.6.5]
 
 > Jan 26, 2019
