@@ -166,7 +166,7 @@ extractReactComponents(
 </html>
 `,
   {
-    componentType: "stateless",
+    componentType: "functional",
     moduleType: false,
   }
 );
