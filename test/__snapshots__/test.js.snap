@@ -1,112 +1,112 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HTML to React components should generate ES5 React components 1`] = `
-Object {
-  "Field": "import React from \\"react\\";
-import Label from \\"./Label\\";
-import Input from \\"./Input\\";
+{
+  "Field": "import React from "react";
+import Label from "./Label";
+import Input from "./Input";
 const Field = React.createClass({
   render() {
     return (
-      <div className=\\"field\\">
-        <Label />
+      <div className="field">
+        <Label></Label>
         <Input />
       </div>
     );
-  }
+  },
 });
 export default Field;
 ",
-  "Form": "import React from \\"react\\";
-import Field from \\"./Field\\";
+  "Form": "import React from "react";
+import Field from "./Field";
 const Form = React.createClass({
   render() {
     return (
       <form action>
-        <Field />
+        <Field></Field>
       </form>
     );
-  }
+  },
 });
 export default Form;
 ",
-  "Header": "import React from \\"react\\";
-import Heading from \\"./Heading\\";
-import Nav from \\"./Nav\\";
+  "Header": "import React from "react";
+import Heading from "./Heading";
+import Nav from "./Nav";
 const Header = React.createClass({
   render() {
     return (
-      <header className=\\"header\\">
-        <Heading />
-        <Nav />
+      <header className="header">
+        <Heading></Heading>
+        <Nav></Nav>
       </header>
     );
-  }
+  },
 });
 export default Header;
 ",
-  "Heading": "import React from \\"react\\";
+  "Heading": "import React from "react";
 const Heading = React.createClass({
   render() {
-    return <h1 className=\\"heading\\">Hello, world!</h1>;
-  }
+    return <h1 className="heading">Hello, world!</h1>;
+  },
 });
 export default Heading;
 ",
-  "Input": "import React from \\"react\\";
+  "Input": "import React from "react";
 const Input = React.createClass({
   render() {
-    return <input type=\\"text\\" id=\\"input\\" />;
-  }
+    return <input type="text" id="input" />;
+  },
 });
 export default Input;
 ",
-  "Label": "import React from \\"react\\";
+  "Label": "import React from "react";
 const Label = React.createClass({
   render() {
     return (
-      <label htmlFor=\\"input\\">
+      <label htmlFor="input">
         Input<span>label</span>
       </label>
     );
-  }
+  },
 });
 export default Label;
 ",
-  "ListItem": "import React from \\"react\\";
+  "ListItem": "import React from "react";
 const ListItem = React.createClass({
   render() {
-    return <li className=\\"list-item\\" />;
-  }
+    return <li className="list-item" />;
+  },
 });
 export default ListItem;
 ",
-  "Main": "import React from \\"react\\";
-import Form from \\"./Form\\";
+  "Main": "import React from "react";
+import Form from "./Form";
 const Main = React.createClass({
   render() {
     return (
-      <main className=\\"main\\">
-        <Form />
+      <main className="main">
+        <Form></Form>
       </main>
     );
-  }
+  },
 });
 export default Main;
 ",
-  "Nav": "import React from \\"react\\";
-import ListItem from \\"./ListItem\\";
+  "Nav": "import React from "react";
+import ListItem from "./ListItem";
 const Nav = React.createClass({
   render() {
     return (
-      <nav className=\\"nav\\">
-        <ul className=\\"list\\">
+      <nav className="nav">
+        <ul className="list">
           <ListItem />
           <ListItem />
         </ul>
       </nav>
     );
-  }
+  },
 });
 export default Nav;
 ",
@@ -114,128 +114,128 @@ export default Nav;
 `;
 
 exports[`HTML to React components should generate ES5 React components as CommonJS modules 1`] = `
-Object {
-  "Field": "const React = require(\\"react\\");
+{
+  "Field": "const React = require("react");
 
-const Label = require(\\"./Label\\");
+const Label = require("./Label");
 
-const Input = require(\\"./Input\\");
+const Input = require("./Input");
 
 const Field = React.createClass({
   render() {
     return (
-      <div className=\\"field\\">
-        <Label />
+      <div className="field">
+        <Label></Label>
         <Input />
       </div>
     );
-  }
+  },
 });
 module.exports = Field;
 ",
-  "Form": "const React = require(\\"react\\");
+  "Form": "const React = require("react");
 
-const Field = require(\\"./Field\\");
+const Field = require("./Field");
 
 const Form = React.createClass({
   render() {
     return (
       <form action>
-        <Field />
+        <Field></Field>
       </form>
     );
-  }
+  },
 });
 module.exports = Form;
 ",
-  "Header": "const React = require(\\"react\\");
+  "Header": "const React = require("react");
 
-const Heading = require(\\"./Heading\\");
+const Heading = require("./Heading");
 
-const Nav = require(\\"./Nav\\");
+const Nav = require("./Nav");
 
 const Header = React.createClass({
   render() {
     return (
-      <header className=\\"header\\">
-        <Heading />
-        <Nav />
+      <header className="header">
+        <Heading></Heading>
+        <Nav></Nav>
       </header>
     );
-  }
+  },
 });
 module.exports = Header;
 ",
-  "Heading": "const React = require(\\"react\\");
+  "Heading": "const React = require("react");
 
 const Heading = React.createClass({
   render() {
-    return <h1 className=\\"heading\\">Hello, world!</h1>;
-  }
+    return <h1 className="heading">Hello, world!</h1>;
+  },
 });
 module.exports = Heading;
 ",
-  "Input": "const React = require(\\"react\\");
+  "Input": "const React = require("react");
 
 const Input = React.createClass({
   render() {
-    return <input type=\\"text\\" id=\\"input\\" />;
-  }
+    return <input type="text" id="input" />;
+  },
 });
 module.exports = Input;
 ",
-  "Label": "const React = require(\\"react\\");
+  "Label": "const React = require("react");
 
 const Label = React.createClass({
   render() {
     return (
-      <label htmlFor=\\"input\\">
+      <label htmlFor="input">
         Input<span>label</span>
       </label>
     );
-  }
+  },
 });
 module.exports = Label;
 ",
-  "ListItem": "const React = require(\\"react\\");
+  "ListItem": "const React = require("react");
 
 const ListItem = React.createClass({
   render() {
-    return <li className=\\"list-item\\" />;
-  }
+    return <li className="list-item" />;
+  },
 });
 module.exports = ListItem;
 ",
-  "Main": "const React = require(\\"react\\");
+  "Main": "const React = require("react");
 
-const Form = require(\\"./Form\\");
+const Form = require("./Form");
 
 const Main = React.createClass({
   render() {
     return (
-      <main className=\\"main\\">
-        <Form />
+      <main className="main">
+        <Form></Form>
       </main>
     );
-  }
+  },
 });
 module.exports = Main;
 ",
-  "Nav": "const React = require(\\"react\\");
+  "Nav": "const React = require("react");
 
-const ListItem = require(\\"./ListItem\\");
+const ListItem = require("./ListItem");
 
 const Nav = React.createClass({
   render() {
     return (
-      <nav className=\\"nav\\">
-        <ul className=\\"list\\">
+      <nav className="nav">
+        <ul className="list">
           <ListItem />
           <ListItem />
         </ul>
       </nav>
     );
-  }
+  },
 });
 module.exports = Nav;
 ",
@@ -243,112 +243,112 @@ module.exports = Nav;
 `;
 
 exports[`HTML to React components should generate ES5 React components as ES6 modules 1`] = `
-Object {
-  "Field": "import React from \\"react\\";
-import Label from \\"./Label\\";
-import Input from \\"./Input\\";
+{
+  "Field": "import React from "react";
+import Label from "./Label";
+import Input from "./Input";
 const Field = React.createClass({
   render() {
     return (
-      <div className=\\"field\\">
-        <Label />
+      <div className="field">
+        <Label></Label>
         <Input />
       </div>
     );
-  }
+  },
 });
 export default Field;
 ",
-  "Form": "import React from \\"react\\";
-import Field from \\"./Field\\";
+  "Form": "import React from "react";
+import Field from "./Field";
 const Form = React.createClass({
   render() {
     return (
       <form action>
-        <Field />
+        <Field></Field>
       </form>
     );
-  }
+  },
 });
 export default Form;
 ",
-  "Header": "import React from \\"react\\";
-import Heading from \\"./Heading\\";
-import Nav from \\"./Nav\\";
+  "Header": "import React from "react";
+import Heading from "./Heading";
+import Nav from "./Nav";
 const Header = React.createClass({
   render() {
     return (
-      <header className=\\"header\\">
-        <Heading />
-        <Nav />
+      <header className="header">
+        <Heading></Heading>
+        <Nav></Nav>
       </header>
     );
-  }
+  },
 });
 export default Header;
 ",
-  "Heading": "import React from \\"react\\";
+  "Heading": "import React from "react";
 const Heading = React.createClass({
   render() {
-    return <h1 className=\\"heading\\">Hello, world!</h1>;
-  }
+    return <h1 className="heading">Hello, world!</h1>;
+  },
 });
 export default Heading;
 ",
-  "Input": "import React from \\"react\\";
+  "Input": "import React from "react";
 const Input = React.createClass({
   render() {
-    return <input type=\\"text\\" id=\\"input\\" />;
-  }
+    return <input type="text" id="input" />;
+  },
 });
 export default Input;
 ",
-  "Label": "import React from \\"react\\";
+  "Label": "import React from "react";
 const Label = React.createClass({
   render() {
     return (
-      <label htmlFor=\\"input\\">
+      <label htmlFor="input">
         Input<span>label</span>
       </label>
     );
-  }
+  },
 });
 export default Label;
 ",
-  "ListItem": "import React from \\"react\\";
+  "ListItem": "import React from "react";
 const ListItem = React.createClass({
   render() {
-    return <li className=\\"list-item\\" />;
-  }
+    return <li className="list-item" />;
+  },
 });
 export default ListItem;
 ",
-  "Main": "import React from \\"react\\";
-import Form from \\"./Form\\";
+  "Main": "import React from "react";
+import Form from "./Form";
 const Main = React.createClass({
   render() {
     return (
-      <main className=\\"main\\">
-        <Form />
+      <main className="main">
+        <Form></Form>
       </main>
     );
-  }
+  },
 });
 export default Main;
 ",
-  "Nav": "import React from \\"react\\";
-import ListItem from \\"./ListItem\\";
+  "Nav": "import React from "react";
+import ListItem from "./ListItem";
 const Nav = React.createClass({
   render() {
     return (
-      <nav className=\\"nav\\">
-        <ul className=\\"list\\">
+      <nav className="nav">
+        <ul className="list">
           <ListItem />
           <ListItem />
         </ul>
       </nav>
     );
-  }
+  },
 });
 export default Nav;
 ",
@@ -356,16 +356,16 @@ export default Nav;
 `;
 
 exports[`HTML to React components should generate ES6 React components 1`] = `
-Object {
-  "Field": "import React from \\"react\\";
-import Label from \\"./Label\\";
-import Input from \\"./Input\\";
+{
+  "Field": "import React from "react";
+import Label from "./Label";
+import Input from "./Input";
 
 class Field extends React.Component {
   render() {
     return (
-      <div className=\\"field\\">
-        <Label />
+      <div className="field">
+        <Label></Label>
         <Input />
       </div>
     );
@@ -374,14 +374,14 @@ class Field extends React.Component {
 
 export default Field;
 ",
-  "Form": "import React from \\"react\\";
-import Field from \\"./Field\\";
+  "Form": "import React from "react";
+import Field from "./Field";
 
 class Form extends React.Component {
   render() {
     return (
       <form action>
-        <Field />
+        <Field></Field>
       </form>
     );
   }
@@ -389,16 +389,16 @@ class Form extends React.Component {
 
 export default Form;
 ",
-  "Header": "import React from \\"react\\";
-import Heading from \\"./Heading\\";
-import Nav from \\"./Nav\\";
+  "Header": "import React from "react";
+import Heading from "./Heading";
+import Nav from "./Nav";
 
 class Header extends React.Component {
   render() {
     return (
-      <header className=\\"header\\">
-        <Heading />
-        <Nav />
+      <header className="header">
+        <Heading></Heading>
+        <Nav></Nav>
       </header>
     );
   }
@@ -406,32 +406,32 @@ class Header extends React.Component {
 
 export default Header;
 ",
-  "Heading": "import React from \\"react\\";
+  "Heading": "import React from "react";
 
 class Heading extends React.Component {
   render() {
-    return <h1 className=\\"heading\\">Hello, world!</h1>;
+    return <h1 className="heading">Hello, world!</h1>;
   }
 }
 
 export default Heading;
 ",
-  "Input": "import React from \\"react\\";
+  "Input": "import React from "react";
 
 class Input extends React.Component {
   render() {
-    return <input type=\\"text\\" id=\\"input\\" />;
+    return <input type="text" id="input" />;
   }
 }
 
 export default Input;
 ",
-  "Label": "import React from \\"react\\";
+  "Label": "import React from "react";
 
 class Label extends React.Component {
   render() {
     return (
-      <label htmlFor=\\"input\\">
+      <label htmlFor="input">
         Input<span>label</span>
       </label>
     );
@@ -440,24 +440,24 @@ class Label extends React.Component {
 
 export default Label;
 ",
-  "ListItem": "import React from \\"react\\";
+  "ListItem": "import React from "react";
 
 class ListItem extends React.Component {
   render() {
-    return <li className=\\"list-item\\" />;
+    return <li className="list-item" />;
   }
 }
 
 export default ListItem;
 ",
-  "Main": "import React from \\"react\\";
-import Form from \\"./Form\\";
+  "Main": "import React from "react";
+import Form from "./Form";
 
 class Main extends React.Component {
   render() {
     return (
-      <main className=\\"main\\">
-        <Form />
+      <main className="main">
+        <Form></Form>
       </main>
     );
   }
@@ -465,14 +465,14 @@ class Main extends React.Component {
 
 export default Main;
 ",
-  "Nav": "import React from \\"react\\";
-import ListItem from \\"./ListItem\\";
+  "Nav": "import React from "react";
+import ListItem from "./ListItem";
 
 class Nav extends React.Component {
   render() {
     return (
-      <nav className=\\"nav\\">
-        <ul className=\\"list\\">
+      <nav className="nav">
+        <ul className="list">
           <ListItem />
           <ListItem />
         </ul>
@@ -487,112 +487,112 @@ export default Nav;
 `;
 
 exports[`HTML to React components should generate file names in lowercase with the specified delimiter 1`] = `
-Object {
-  "Field": "import React from \\"react\\";
-import Label from \\"./label\\";
-import Input from \\"./input\\";
+{
+  "Field": "import React from "react";
+import Label from "./label";
+import Input from "./input";
 const Field = React.createClass({
   render() {
     return (
-      <div className=\\"field\\">
-        <Label />
+      <div className="field">
+        <Label></Label>
         <Input />
       </div>
     );
-  }
+  },
 });
 export default Field;
 ",
-  "Form": "import React from \\"react\\";
-import Field from \\"./field\\";
+  "Form": "import React from "react";
+import Field from "./field";
 const Form = React.createClass({
   render() {
     return (
       <form action>
-        <Field />
+        <Field></Field>
       </form>
     );
-  }
+  },
 });
 export default Form;
 ",
-  "Header": "import React from \\"react\\";
-import Heading from \\"./heading\\";
-import Nav from \\"./nav\\";
+  "Header": "import React from "react";
+import Heading from "./heading";
+import Nav from "./nav";
 const Header = React.createClass({
   render() {
     return (
-      <header className=\\"header\\">
-        <Heading />
-        <Nav />
+      <header className="header">
+        <Heading></Heading>
+        <Nav></Nav>
       </header>
     );
-  }
+  },
 });
 export default Header;
 ",
-  "Heading": "import React from \\"react\\";
+  "Heading": "import React from "react";
 const Heading = React.createClass({
   render() {
-    return <h1 className=\\"heading\\">Hello, world!</h1>;
-  }
+    return <h1 className="heading">Hello, world!</h1>;
+  },
 });
 export default Heading;
 ",
-  "Input": "import React from \\"react\\";
+  "Input": "import React from "react";
 const Input = React.createClass({
   render() {
-    return <input type=\\"text\\" id=\\"input\\" />;
-  }
+    return <input type="text" id="input" />;
+  },
 });
 export default Input;
 ",
-  "Label": "import React from \\"react\\";
+  "Label": "import React from "react";
 const Label = React.createClass({
   render() {
     return (
-      <label htmlFor=\\"input\\">
+      <label htmlFor="input">
         Input<span>label</span>
       </label>
     );
-  }
+  },
 });
 export default Label;
 ",
-  "ListItem": "import React from \\"react\\";
+  "ListItem": "import React from "react";
 const ListItem = React.createClass({
   render() {
-    return <li className=\\"list-item\\" />;
-  }
+    return <li className="list-item" />;
+  },
 });
 export default ListItem;
 ",
-  "Main": "import React from \\"react\\";
-import Form from \\"./form\\";
+  "Main": "import React from "react";
+import Form from "./form";
 const Main = React.createClass({
   render() {
     return (
-      <main className=\\"main\\">
-        <Form />
+      <main className="main">
+        <Form></Form>
       </main>
     );
-  }
+  },
 });
 export default Main;
 ",
-  "Nav": "import React from \\"react\\";
-import ListItem from \\"./list-item\\";
+  "Nav": "import React from "react";
+import ListItem from "./list-item";
 const Nav = React.createClass({
   render() {
     return (
-      <nav className=\\"nav\\">
-        <ul className=\\"list\\">
+      <nav className="nav">
+        <ul className="list">
           <ListItem />
           <ListItem />
         </ul>
       </nav>
     );
-  }
+  },
 });
 export default Nav;
 ",
@@ -600,89 +600,89 @@ export default Nav;
 `;
 
 exports[`HTML to React components should generate stateless React components 1`] = `
-Object {
-  "Field": "import React from \\"react\\";
-import Label from \\"./Label\\";
-import Input from \\"./Input\\";
+{
+  "Field": "import React from "react";
+import Label from "./Label";
+import Input from "./Input";
 
 const Field = () => (
-  <div className=\\"field\\">
-    <Label />
+  <div className="field">
+    <Label></Label>
     <Input />
   </div>
 );
 
 export default Field;
 ",
-  "Form": "import React from \\"react\\";
-import Field from \\"./Field\\";
+  "Form": "import React from "react";
+import Field from "./Field";
 
 const Form = () => (
   <form action>
-    <Field />
+    <Field></Field>
   </form>
 );
 
 export default Form;
 ",
-  "Header": "import React from \\"react\\";
-import Heading from \\"./Heading\\";
-import Nav from \\"./Nav\\";
+  "Header": "import React from "react";
+import Heading from "./Heading";
+import Nav from "./Nav";
 
 const Header = () => (
-  <header className=\\"header\\">
-    <Heading />
-    <Nav />
+  <header className="header">
+    <Heading></Heading>
+    <Nav></Nav>
   </header>
 );
 
 export default Header;
 ",
-  "Heading": "import React from \\"react\\";
+  "Heading": "import React from "react";
 
-const Heading = () => <h1 className=\\"heading\\">Hello, world!</h1>;
+const Heading = () => <h1 className="heading">Hello, world!</h1>;
 
 export default Heading;
 ",
-  "Input": "import React from \\"react\\";
+  "Input": "import React from "react";
 
-const Input = () => <input type=\\"text\\" id=\\"input\\" />;
+const Input = () => <input type="text" id="input" />;
 
 export default Input;
 ",
-  "Label": "import React from \\"react\\";
+  "Label": "import React from "react";
 
 const Label = () => (
-  <label htmlFor=\\"input\\">
+  <label htmlFor="input">
     Input<span>label</span>
   </label>
 );
 
 export default Label;
 ",
-  "ListItem": "import React from \\"react\\";
+  "ListItem": "import React from "react";
 
-const ListItem = () => <li className=\\"list-item\\" />;
+const ListItem = () => <li className="list-item" />;
 
 export default ListItem;
 ",
-  "Main": "import React from \\"react\\";
-import Form from \\"./Form\\";
+  "Main": "import React from "react";
+import Form from "./Form";
 
 const Main = () => (
-  <main className=\\"main\\">
-    <Form />
+  <main className="main">
+    <Form></Form>
   </main>
 );
 
 export default Main;
 ",
-  "Nav": "import React from \\"react\\";
-import ListItem from \\"./ListItem\\";
+  "Nav": "import React from "react";
+import ListItem from "./ListItem";
 
 const Nav = () => (
-  <nav className=\\"nav\\">
-    <ul className=\\"list\\">
+  <nav className="nav">
+    <ul className="list">
       <ListItem />
       <ListItem />
     </ul>
@@ -695,8 +695,8 @@ export default Nav;
 `;
 
 exports[`HTML to React components should transform inline CSS properly 1`] = `
-Object {
-  "Box": "import React from \\"react\\";
+{
+  "Box": "import React from "react";
 
 class Box extends React.Component {
   render() {
@@ -704,8 +704,8 @@ class Box extends React.Component {
       <div
         style={{
           margin: 0,
-          padding: \\"10px\\",
-          border: \\"1px solid black\\"
+          padding: "10px",
+          border: "1px solid black",
         }}
       >
         Box
@@ -720,8 +720,8 @@ export default Box;
 `;
 
 exports[`HTML to React components should transform public HTML attrbiutes into React props 1`] = `
-Object {
-  "Button": "import React from \\"react\\";
+{
+  "Button": "import React from "react";
 
 class Button extends React.Component {
   render() {
