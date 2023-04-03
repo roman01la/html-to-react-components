@@ -698,21 +698,17 @@ exports[`HTML to React components should transform inline CSS properly 1`] = `
 {
   "Box": "import React from "react";
 
-class Box extends React.Component {
-  render() {
-    return (
-      <div
-        style={{
-          margin: 0,
-          padding: "10px",
-          border: "1px solid black",
-        }}
-      >
-        Box
-      </div>
-    );
-  }
-}
+const Box = () => (
+  <div
+    style={{
+      margin: 0,
+      padding: "10px",
+      border: "1px solid black",
+    }}
+  >
+    Box
+  </div>
+);
 
 export default Box;
 ",
@@ -723,12 +719,7 @@ exports[`HTML to React components should transform public HTML attrbiutes into R
 {
   "Button": "import React from "react";
 
-class Button extends React.Component {
-  render() {
-    const { onclick } = this.props;
-    return <button onclick={onclick}>press</button>;
-  }
-}
+const Button = ({ onclick }) => <button onclick={onclick}>press</button>;
 
 export default Button;
 ",

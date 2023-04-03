@@ -97,9 +97,9 @@ Type of generated React components.
 
 Values:
 
-- `stateless`
+- `functional` (default)
 - `es5`
-- `es6` (default)
+- `es6`
 
 #### moduleType, --module, -m
 
@@ -167,7 +167,7 @@ extractReactComponents(
 `,
   {
     componentType: "stateless",
-    moduleType: false
+    moduleType: false,
   }
 );
 
