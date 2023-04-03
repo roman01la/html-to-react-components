@@ -107,7 +107,7 @@ Type of generated JavaScript modules.
 
 Values:
 
-- `es6` (default)
+- `es` (EcmaScript module, default)
 - `cjs` (CommonJS)
 
 #### moduleFileNameDelimiter, --delimiter, -d
