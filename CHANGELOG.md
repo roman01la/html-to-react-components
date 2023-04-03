@@ -1,3 +1,16 @@
+## [v2.0.0]
+
+> April 3, 2023
+
+- changed option names:
+
+  - component type `es6` -> `class`
+  - component type `stateless` -> `functional`
+  - module type `es6` -> `class`
+
+- changed defaults:
+  - component type `functional` is the default now instead of `class`
+
 ## [v1.6.6]
 
 > Jan 31, 2019
