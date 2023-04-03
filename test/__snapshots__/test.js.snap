@@ -599,7 +599,7 @@ export default Nav;
 }
 `;
 
-exports[`HTML to React components should generate stateless React components 1`] = `
+exports[`HTML to React components should generate functional React components 1`] = `
 {
   "Field": "import React from "react";
 import Label from "./Label";

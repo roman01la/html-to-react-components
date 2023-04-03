@@ -98,8 +98,8 @@ Type of generated React components.
 Values:
 
 - `functional` (default)
+- `class`
 - `es5`
-- `es6`
 
 #### moduleType, --module, -m
 
