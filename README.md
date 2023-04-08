@@ -1,5 +1,3 @@
-[![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-personal-page.svg)](https://stand-with-ukraine.pp.ua/)
-
 <img src="logo.png" width="260" alt="Logo" />
 
 <a href="https://travis-ci.org/roman01la/html-to-react-components">
@@ -12,11 +10,9 @@
   <img src="https://img.shields.io/coveralls/roman01la/html-to-react-components.svg?style=flat-square" />
 </a>
 
-<p>
-<a href="https://www.patreon.com/bePatron?c=1239559">
-  <img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" height="40px" />
-</a>
-</p>
+_If you like what I do, consider supporting my work via donation_
+
+[![](https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg)](https://www.buymeacoffee.com/romanliutikov)
 
 Extract annotated portions of HTML into React components as separate modules. The structure of HTML is preserved by importing child components and replacing appropriate pieces of HTML with them. As a result you get an entire components tree ready to be rendered.
 
